@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<dependenciesRoot>
-  <uses language="l:f0ceec77-84bd-4104-b532-84a17dffbb8a:WebAssemblyBytecode" />
-  <uses language="l:3ffc45fa-7195-4470-834b-a6b1a95f90d6:WebassemblyText" />
-</dependenciesRoot>
-
