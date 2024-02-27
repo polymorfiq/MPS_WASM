@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:3f25d006-02f4-4b7c-b8ce-40ed000d5e4f(WASMScripts.sandbox)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="f0ceec77-84bd-4104-b532-84a17dffbb8a" name="WebAssembly">
+      <concept id="6925410296611283108" name="WebAssembly.structure.Module" flags="ng" index="2dgHXs">
+        <property id="6925410296612035061" name="name" index="2dvQod" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2dgHXs" id="60rZZzI7yFT">
+    <property role="2dvQod" value="SomeModule" />
+  </node>
+</model>
+

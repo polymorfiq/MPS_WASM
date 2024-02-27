@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:3f25d006-02f4-4b7c-b8ce-40ed000d5e4f(WASMScripts.sandbox)" content="header">
+  <persistence version="9" />
+  <attribute name="content" value="header" />
+  <languages>
+    <use id="f0ceec77-84bd-4104-b532-84a17dffbb8a" name="WebAssembly" version="-1" />
+    <use id="3ffc45fa-7195-4470-834b-a6b1a95f90d6" name="WebassemblyText" version="0" />
+    <use id="f298ec4d-9e6f-4f68-bf2b-d051b9d2fa18" name="BinaryGen.make" version="0" />
+    <engage id="f0ceec77-84bd-4104-b532-84a17dffbb8a" name="WebAssembly" />
+  </languages>
+  <imports />
+</model>
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/WebAssembly/WebAssembly.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/WebassemblyText/WebassemblyText.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/WASM.sandbox/WASM.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/WASMScripts.sandbox/WASMScripts.sandbox.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
