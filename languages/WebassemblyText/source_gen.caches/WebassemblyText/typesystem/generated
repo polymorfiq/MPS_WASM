@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="9vligyhn4hd14bwskbjml7xqylik8wk">
+  <files names="StackItem.java:StackState.java:TypesystemDescriptor.java:check_F32BinOp_NonTypesystemRule.java:check_F64BinOp_NonTypesystemRule.java:check_I32BinOp_NonTypesystemRule.java:check_I64BinOp_NonTypesystemRule.java:typeof_BinOp_InferenceRule.java:typeof_F32Const_InferenceRule.java:typeof_F64Const_InferenceRule.java:typeof_I32Const_InferenceRule.java:typeof_I64Const_InferenceRule.java:typeof_LocalGet_InferenceRule.java:typeof_Param_InferenceRule.java:typeof_UnaryOp_InferenceRule.java" />
+</product>
+

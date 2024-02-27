@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="BinaryGeneratorDescriptor.java">
+      <unit at="16,0,81,0" name="WebAssembly.binaryGen.BinaryGeneratorDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:5df6e5b3-5b41-4710-9397-6fc365b1cc08(WebAssembly.binaryGen)/4172580935715127649">
+    <file name="Module_BinaryGen.java">
+      <node id="4172580935712334658" at="24,80,25,74" concept="0" />
+      <node id="4172580935712334659" at="25,74,26,69" concept="0" />
+      <node id="4172580935712334660" at="26,69,27,96" concept="0" />
+      <node id="4172580935715127649" at="31,38,32,96" concept="3" />
+      <node id="4172580935715127649" at="36,38,37,113" concept="3" />
+      <node id="4172580935715127948" at="41,39,42,18" concept="3" />
+      <node id="4172580935712334663" at="44,78,45,52" concept="2" />
+      <node id="4172580935712334675" at="47,40,48,98" concept="0" />
+      <node id="4172580935712334683" at="50,7,51,0" concept="4" />
+      <node id="4172580935712334684" at="51,0,52,45" concept="2" />
+      <node id="4172580935712334693" at="52,45,53,49" concept="2" />
+      <node id="4172580935712334705" at="55,37,56,90" concept="2" />
+      <node id="4172580935712334712" at="56,90,57,72" concept="0" />
+      <node id="4172580935712334721" at="57,72,58,36" concept="0" />
+      <node id="4172580935712334729" at="60,7,61,0" concept="4" />
+      <node id="4172580935712334730" at="61,0,62,42" concept="3" />
+      <node id="4172580935715127649" at="66,0,67,0" concept="5" trace="sections$6WTp" />
+      <node id="4172580935712334673" at="47,0,50,0" concept="1" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4172580935715127649" at="30,0,34,0" concept="1" trace="filePath#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="4172580935715127649" at="35,0,39,0" concept="1" trace="fileName#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="4172580935715127649" at="40,0,44,0" concept="1" trace="extension#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="4172580935712334667" at="45,52,50,7" concept="0" />
+      <node id="4172580935712334703" at="55,0,60,0" concept="1" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4172580935715127649" at="23,0,29,0" concept="1" trace="generate#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/io/DataOutputStream;)V" />
+      <node id="4172580935712334697" at="53,49,60,7" concept="0" />
+      <node id="4172580935712334660" at="44,0,64,0" concept="1" trace="bytesFieldValue_wq6h8e_c#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
+      <scope id="4172580935715127649" at="31,38,32,96" />
+      <scope id="4172580935715127649" at="36,38,37,113" />
+      <scope id="4172580935715127653" at="41,39,42,18" />
+      <scope id="4172580935712334674" at="47,40,48,98" />
+      <scope id="4172580935715127649" at="24,80,27,96" />
+      <scope id="4172580935712334673" at="47,0,50,0">
+        <var name="section" id="4172580935712334673" />
+      </scope>
+      <scope id="4172580935712334704" at="55,37,58,36">
+        <var name="sectBytes" id="4172580935712334706" />
+      </scope>
+      <scope id="4172580935715127649" at="30,0,34,0">
+        <var name="node" id="4172580935715127649" />
+      </scope>
+      <scope id="4172580935715127649" at="35,0,39,0">
+        <var name="node" id="4172580935715127649" />
+      </scope>
+      <scope id="4172580935715127649" at="40,0,44,0">
+        <var name="node" id="4172580935715127649" />
+      </scope>
+      <scope id="4172580935712334703" at="55,0,60,0">
+        <var name="sect" id="4172580935712334703" />
+      </scope>
+      <scope id="4172580935715127649" at="23,0,29,0">
+        <var name="node" id="4172580935715127649" />
+        <var name="stream" id="4172580935715127649" />
+      </scope>
+      <scope id="4172580935712334662" at="44,78,62,42">
+        <var name="data" id="4172580935712334685" />
+        <var name="i" id="4172580935712334694" />
+        <var name="size" id="4172580935712334664" />
+      </scope>
+      <scope id="4172580935712334660" at="44,0,64,0">
+        <var name="node_wq6h8e_c" id="4172580935712334660" />
+      </scope>
+      <unit id="4172580935715127649" at="65,0,68,0" name="WebAssembly.binaryGen.Module_BinaryGen$LINKS" />
+      <unit id="4172580935712334673" at="46,104,50,5" name="WebAssembly.binaryGen.Module_BinaryGen$1" />
+      <unit id="4172580935712334703" at="54,104,60,5" name="WebAssembly.binaryGen.Module_BinaryGen$2" />
+      <unit id="4172580935715127649" at="22,0,69,0" name="WebAssembly.binaryGen.Module_BinaryGen" />
+    </file>
+  </root>
+</debug-info>
+

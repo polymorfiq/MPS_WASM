@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="DataFlowAspectDescriptorImpl.java">
+      <unit at="15,0,34,0" name="WebassemblyText.dataFlow.DataFlowAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:ce053d2b-be32-4546-909b-884f325b7567(WebassemblyText.dataFlow)/6925410296595634250">
+    <file name="Param_DataFlow.java">
+      <node id="6925410296595634321" at="12,60,13,186" concept="0" />
+      <node id="6925410296595634250" at="17,0,18,0" concept="2" trace="id$COrW" />
+      <node id="6925410296595634250" at="12,0,15,0" concept="1" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="6925410296595634252" at="12,60,13,186" />
+      <scope id="6925410296595634250" at="12,0,15,0">
+        <var name="_context" id="6925410296595634250" />
+      </scope>
+      <unit id="6925410296595634250" at="16,0,19,0" name="WebassemblyText.dataFlow.Param_DataFlow$LINKS" />
+      <unit id="6925410296595634250" at="11,0,20,0" name="WebassemblyText.dataFlow.Param_DataFlow" />
+    </file>
+  </root>
+  <root nodeRef="r:ce053d2b-be32-4546-909b-884f325b7567(WebassemblyText.dataFlow)/6925410296595641431">
+    <file name="Func_DataFlow.java">
+      <node id="6925410296595641458" at="13,60,14,104" concept="0" />
+      <node id="6925410296595641431" at="18,0,19,0" concept="2" trace="body$GzXV" />
+      <node id="6925410296595641431" at="13,0,16,0" concept="1" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="6925410296595641433" at="13,60,14,104" />
+      <scope id="6925410296595641431" at="13,0,16,0">
+        <var name="_context" id="6925410296595641431" />
+      </scope>
+      <unit id="6925410296595641431" at="17,0,20,0" name="WebassemblyText.dataFlow.Func_DataFlow$LINKS" />
+      <unit id="6925410296595641431" at="12,0,21,0" name="WebassemblyText.dataFlow.Func_DataFlow" />
+    </file>
+  </root>
+  <root nodeRef="r:ce053d2b-be32-4546-909b-884f325b7567(WebassemblyText.dataFlow)/6925410296595643957">
+    <file name="LocalGet_DataFlow.java">
+      <node id="6925410296595643984" at="12,60,13,226" concept="0" />
+      <node id="6925410296595643957" at="17,0,18,0" concept="2" trace="x$ziAZ" />
+      <node id="6925410296595643957" at="18,0,19,0" concept="2" trace="id$PkgV" />
+      <node id="6925410296595643957" at="12,0,15,0" concept="1" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="6925410296595643959" at="12,60,13,226" />
+      <scope id="6925410296595643957" at="12,0,15,0">
+        <var name="_context" id="6925410296595643957" />
+      </scope>
+      <unit id="6925410296595643957" at="16,0,20,0" name="WebassemblyText.dataFlow.LocalGet_DataFlow$LINKS" />
+      <unit id="6925410296595643957" at="11,0,21,0" name="WebassemblyText.dataFlow.LocalGet_DataFlow" />
+    </file>
+  </root>
+</debug-info>
+

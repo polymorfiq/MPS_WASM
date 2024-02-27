@@ -36,8 +36,6 @@
 /build/resources/openJDK
 classes
 classes_gen
-source_gen
-source_gen.caches
 testclasses
 kotlin_compiled_cache.xml
 teamcity-info.xml
