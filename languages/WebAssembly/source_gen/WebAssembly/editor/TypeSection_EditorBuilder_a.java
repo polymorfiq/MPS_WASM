@@ -83,7 +83,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "types");
     editorCell.setCellId("Constant_rbdn2o_b0a");
     Style style = new StyleImpl();
-    new sectionnameStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    new sectionnameStyleClass(this).apply(style, editorCell);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;

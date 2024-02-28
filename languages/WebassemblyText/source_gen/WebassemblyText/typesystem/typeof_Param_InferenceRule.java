@@ -23,7 +23,7 @@ public class typeof_Param_InferenceRule extends AbstractInferenceRule_Runtime im
   }
   public void applyRule(final SNode param, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     SNode itemType;
-    switch (enumSwitchIndex_srqsi2_a0b0b.indexNullable(SPropertyOperations.getEnum(param, PROPS.paramType$CULn))) {
+    switch (enumSwitchIndex.indexNullable(SPropertyOperations.getEnum(param, PROPS.paramType$CULn))) {
       case 0:
         itemType = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x3ffc45fa71954470L, 0x834ba6b1a95f90d6L, 0x601bfff8ec49ee2bL, "WebassemblyText.structure.I32"));
         break;
@@ -70,7 +70,7 @@ public class typeof_Param_InferenceRule extends AbstractInferenceRule_Runtime im
   public boolean overrides() {
     return false;
   }
-  private static final EnumerationLiteralsIndex enumSwitchIndex_srqsi2_a0b0b = EnumerationLiteralsIndex.build(0x3ffc45fa71954470L, 0x834ba6b1a95f90d6L, 0x601bfff8ed2a9769L, 0x601bfff8ed2a976aL, 0x601bfff8ed2a976cL, 0x601bfff8ed2a9770L, 0x601bfff8ed2a9775L, 0x601bfff8ed2a977cL, 0x601bfff8ed2a979dL, 0x601bfff8ed2a978aL, 0x601bfff8ed2a9793L, 0x601bfff8ed2a9782L);
+  private static final EnumerationLiteralsIndex enumSwitchIndex = EnumerationLiteralsIndex.build(0x3ffc45fa71954470L, 0x834ba6b1a95f90d6L, 0x601bfff8ed2a9769L, 0x601bfff8ed2a976aL, 0x601bfff8ed2a976cL, 0x601bfff8ed2a9770L, 0x601bfff8ed2a9775L, 0x601bfff8ed2a977cL, 0x601bfff8ed2a979dL, 0x601bfff8ed2a978aL, 0x601bfff8ed2a9793L, 0x601bfff8ed2a9782L);
 
   private static final class PROPS {
     /*package*/ static final SProperty paramType$CULn = MetaAdapterFactory.getProperty(0x3ffc45fa71954470L, 0x834ba6b1a95f90d6L, 0x601bfff8ec46e77dL, 0x601bfff8ec46e784L, "paramType");

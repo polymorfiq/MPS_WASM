@@ -113,7 +113,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
         editorCell.setSRole(LINKS.min$gbDV);
       }
       Style style = new StyleImpl();
-      new numericStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+      new numericStyleClass(this).apply(style, editorCell);
       editorCell.getStyle().putAll(style);
     }
     @Override
@@ -181,7 +181,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
         editorCell.setSRole(LINKS.max$gc7X);
       }
       Style style = new StyleImpl();
-      new numericStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+      new numericStyleClass(this).apply(style, editorCell);
       editorCell.getStyle().putAll(style);
     }
     @Override

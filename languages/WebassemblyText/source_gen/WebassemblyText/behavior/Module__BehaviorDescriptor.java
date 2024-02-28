@@ -23,7 +23,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class Module__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x3ffc45fa71954470L, 0x834ba6b1a95f90d6L, 0x601bfff8ec46d40cL, "WebassemblyText.structure.Module");
 
-  public static final SMethod<Integer> fieldCount_id60rZZzI6hK4 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("fieldCount").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("60rZZzI6hK4").build();
+  public static final SMethod<Integer> fieldCount_id60rZZzI6hK4 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("fieldCount").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6925410296623864836L).languageId(0x834ba6b1a95f90d6L, 0x3ffc45fa71954470L).build2();
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(fieldCount_id60rZZzI6hK4);
 

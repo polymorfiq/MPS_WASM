@@ -17,7 +17,6 @@ import WebAssembly.structure.Bytes;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.internal.collections.runtime.IVisitor;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -26,8 +25,8 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class I8x16Shuffle__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf0ceec7784bd4104L, 0xb53284a17dffbb8aL, 0x39e7fc40f70d2cc3L, "WebAssembly.structure.I8x16Shuffle");
 
-  public static final SMethod<Integer> byte_size_id60rZZzHEXgh = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("byte_size").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("60rZZzHEXgh").build();
-  public static final SMethod<byte[]> bytes_id60rZZzHEXiv = new SMethodBuilder<byte[]>(new SJavaCompoundTypeImpl(byte[].class)).name("bytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("60rZZzHEXiv").build();
+  public static final SMethod<Integer> byte_size_id60rZZzHEXgh = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("byte_size").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6925410296616702993L).languageId(0xb53284a17dffbb8aL, 0xf0ceec7784bd4104L).build2();
+  public static final SMethod<byte[]> bytes_id60rZZzHEXiv = new SMethodBuilder<byte[]>(new SJavaCompoundTypeImpl(byte[].class)).name("bytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6925410296616703135L).languageId(0xb53284a17dffbb8aL, 0xf0ceec7784bd4104L).build2();
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(byte_size_id60rZZzHEXgh, bytes_id60rZZzHEXiv);
 
@@ -47,12 +46,10 @@ public final class I8x16Shuffle__BehaviorDescriptor extends BaseBHDescriptor {
     System.arraycopy(opcode, 0, bytes, i.value, opcode.length);
     i.value += opcode.length;
 
-    ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.l$MBIT)).visitAll(new IVisitor<SNode>() {
-      public void visit(SNode laneidx) {
-        byte[] laneBytes = ByteSized__BehaviorDescriptor.bytes_id60rZZzHEXiv.invoke(laneidx);
-        System.arraycopy(laneBytes, 0, bytes, i.value, laneBytes.length);
-        i.value += laneBytes.length;
-      }
+    ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.l$MBIT)).visitAll((laneidx) -> {
+      byte[] laneBytes = ByteSized__BehaviorDescriptor.bytes_id60rZZzHEXiv.invoke(laneidx);
+      System.arraycopy(laneBytes, 0, bytes, i.value, laneBytes.length);
+      i.value += laneBytes.length;
     });
 
     return bytes;

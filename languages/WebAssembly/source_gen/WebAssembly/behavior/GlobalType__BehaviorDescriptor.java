@@ -26,8 +26,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class GlobalType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf0ceec7784bd4104L, 0xb53284a17dffbb8aL, 0x601bfff8ed829441L, "WebAssembly.structure.GlobalType");
 
-  public static final SMethod<Integer> byte_size_id60rZZzHEXgh = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("byte_size").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("60rZZzHEXgh").build();
-  public static final SMethod<byte[]> bytes_id60rZZzHEXiv = new SMethodBuilder<byte[]>(new SJavaCompoundTypeImpl(byte[].class)).name("bytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("60rZZzHEXiv").build();
+  public static final SMethod<Integer> byte_size_id60rZZzHEXgh = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("byte_size").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6925410296616702993L).languageId(0xb53284a17dffbb8aL, 0xf0ceec7784bd4104L).build2();
+  public static final SMethod<byte[]> bytes_id60rZZzHEXiv = new SMethodBuilder<byte[]>(new SJavaCompoundTypeImpl(byte[].class)).name("bytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6925410296616703135L).languageId(0xb53284a17dffbb8aL, 0xf0ceec7784bd4104L).build2();
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(byte_size_id60rZZzHEXgh, bytes_id60rZZzHEXiv);
 
@@ -41,7 +41,7 @@ public final class GlobalType__BehaviorDescriptor extends BaseBHDescriptor {
     byte[] bytes = new byte[2];
     System.arraycopy(ByteSized__BehaviorDescriptor.bytes_id60rZZzHEXiv.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.t$ftA0)), 0, bytes, 0, 1);
 
-    switch (enumSwitchIndex_cn8zsv_a0d0k.indexNullable(SPropertyOperations.getEnum(__thisNode__, PROPS.m$i4D8))) {
+    switch (enumSwitchIndex.indexNullable(SPropertyOperations.getEnum(__thisNode__, PROPS.m$i4D8))) {
       case 0:
         bytes[1] = Bytes.u8Byte(0x00);
         break;
@@ -100,7 +100,7 @@ public final class GlobalType__BehaviorDescriptor extends BaseBHDescriptor {
   public SAbstractConcept getConcept() {
     return CONCEPT;
   }
-  private static final EnumerationLiteralsIndex enumSwitchIndex_cn8zsv_a0d0k = EnumerationLiteralsIndex.build(0xf0ceec7784bd4104L, 0xb53284a17dffbb8aL, 0x601bfff8ed82944bL, 0x601bfff8ed82944cL, 0x601bfff8ed82944fL);
+  private static final EnumerationLiteralsIndex enumSwitchIndex = EnumerationLiteralsIndex.build(0xf0ceec7784bd4104L, 0xb53284a17dffbb8aL, 0x601bfff8ed82944bL, 0x601bfff8ed82944cL, 0x601bfff8ed82944fL);
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink t$ftA0 = MetaAdapterFactory.getContainmentLink(0xf0ceec7784bd4104L, 0xb53284a17dffbb8aL, 0x601bfff8ed829441L, 0x601bfff8ed829445L, "t");

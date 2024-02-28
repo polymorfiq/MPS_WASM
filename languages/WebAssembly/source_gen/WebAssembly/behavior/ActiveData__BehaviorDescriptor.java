@@ -25,9 +25,9 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class ActiveData__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf0ceec7784bd4104L, 0xb53284a17dffbb8aL, 0x39e7fc40f7b602cdL, "WebAssembly.structure.ActiveData");
 
-  public static final SMethod<Integer> byte_size_id60rZZzHEXgh = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("byte_size").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("60rZZzHEXgh").build();
-  public static final SMethod<byte[]> bytes_id60rZZzHEXiv = new SMethodBuilder<byte[]>(new SJavaCompoundTypeImpl(byte[].class)).name("bytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("60rZZzHEXiv").build();
-  public static final SMethod<byte[]> hexStringToByteArray_id3BBZ43RIbe4 = new SMethodBuilder<byte[]>(new SJavaCompoundTypeImpl(byte[].class)).name("hexStringToByteArray").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).id("3BBZ43RIbe4").build(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<Integer> byte_size_id60rZZzHEXgh = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("byte_size").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6925410296616702993L).languageId(0xb53284a17dffbb8aL, 0xf0ceec7784bd4104L).build2();
+  public static final SMethod<byte[]> bytes_id60rZZzHEXiv = new SMethodBuilder<byte[]>(new SJavaCompoundTypeImpl(byte[].class)).name("bytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6925410296616703135L).languageId(0xb53284a17dffbb8aL, 0xf0ceec7784bd4104L).build2();
+  public static final SMethod<byte[]> hexStringToByteArray_id3BBZ43RIbe4 = new SMethodBuilder<byte[]>(new SJavaCompoundTypeImpl(byte[].class)).name("hexStringToByteArray").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4172580935746237316L).languageId(0xb53284a17dffbb8aL, 0xf0ceec7784bd4104L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(byte_size_id60rZZzHEXgh, bytes_id60rZZzHEXiv, hexStringToByteArray_id3BBZ43RIbe4);
 

@@ -72,7 +72,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "func");
     editorCell.setCellId("Constant_j92lw7_b0");
     Style style = new StyleImpl();
-    new funcnameStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    new funcnameStyleClass(this).apply(style, editorCell);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;

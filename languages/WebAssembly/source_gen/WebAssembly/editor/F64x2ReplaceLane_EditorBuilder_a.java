@@ -55,7 +55,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "f64x2.replace_lane");
     editorCell.setCellId("Constant_rkm21x_a0");
     Style style = new StyleImpl();
-    new instrStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    new instrStyleClass(this).apply(style, editorCell);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;

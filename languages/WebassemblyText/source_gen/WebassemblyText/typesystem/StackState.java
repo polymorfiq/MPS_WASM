@@ -8,11 +8,9 @@ import java.util.LinkedList;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.internal.collections.runtime.IVisitor;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.EnumerationLiteralsIndex;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -23,7 +21,7 @@ public class StackState {
   public Deque<StackItem> currStack;
 
   public StackState() {
-    this.currStack = DequeSequence.fromDequeNew(new LinkedList<StackItem>());
+    this.currStack = DequeSequence.fromDeque(new LinkedList<StackItem>());
   }
 
   public void push(SNode id, SNode type) {
@@ -40,18 +38,14 @@ public class StackState {
   }
 
   public StackItem itemAtId(final SNode id) {
-    return DequeSequence.fromDequeNew(this.currStack).findFirst(new IWhereFilter<StackItem>() {
-      public boolean accept(StackItem item) {
-        return SPropertyOperations.getString(item.id, PROPS.name$uQ1W).equals(SPropertyOperations.getString(id, PROPS.name$uQ1W));
-      }
-    });
+    return DequeSequence.fromDequeNew(this.currStack).findFirst((item) -> SPropertyOperations.getString(item.id, PROPS.name$uQ1W).equals(SPropertyOperations.getString(id, PROPS.name$uQ1W)));
   }
 
   public StackItem itemAtIdx(int idx) {
-    int listSize = DequeSequence.fromDequeNew(this.currStack).toListSequence().count();
+    int listSize = ListSequence.fromList(DequeSequence.fromDequeNew(this.currStack).toList()).count();
 
     if (listSize > idx) {
-      return ListSequence.fromList(DequeSequence.fromDequeNew(this.currStack).toListSequence()).getElement(listSize - idx);
+      return ListSequence.fromList(DequeSequence.fromDequeNew(this.currStack).toList()).getElement(listSize - idx);
     } else {
       return null;
     }
@@ -72,45 +66,41 @@ public class StackState {
   public static StackState stateAtFuncIndex(SNode fnc, int idx) {
     final StackState state = new StackState();
 
-    ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(fnc, LINKS.typeuse$ss1_), LINKS.params$hnVB)).visitAll(new IVisitor<SNode>() {
-      public void visit(SNode param) {
-        switch (enumSwitchIndex_x8dabo_a0a0a0a0a0c0o.indexNullable(SPropertyOperations.getEnum(param, PROPS.paramType$CULn))) {
-          case 0:
-            state.push(SLinkOperations.getTarget(param, LINKS.id$COrW), SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x3ffc45fa71954470L, 0x834ba6b1a95f90d6L, 0x601bfff8ec49ee2bL, "WebassemblyText.structure.I32")));
-            break;
-          case 1:
-            state.push(SLinkOperations.getTarget(param, LINKS.id$COrW), SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x3ffc45fa71954470L, 0x834ba6b1a95f90d6L, 0x601bfff8ec49ee2cL, "WebassemblyText.structure.I64")));
-            break;
-          case 2:
-            state.push(SLinkOperations.getTarget(param, LINKS.id$COrW), SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x3ffc45fa71954470L, 0x834ba6b1a95f90d6L, 0x601bfff8ec49ee2eL, "WebassemblyText.structure.F32")));
-            break;
-          case 3:
-            state.push(SLinkOperations.getTarget(param, LINKS.id$COrW), SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x3ffc45fa71954470L, 0x834ba6b1a95f90d6L, 0x601bfff8ec49ee30L, "WebassemblyText.structure.F64")));
-            break;
-        }
-
-        return;
+    ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(fnc, LINKS.typeuse$ss1_), LINKS.params$hnVB)).visitAll((param) -> {
+      switch (enumSwitchIndex.indexNullable(SPropertyOperations.getEnum(param, PROPS.paramType$CULn))) {
+        case 0:
+          state.push(SLinkOperations.getTarget(param, LINKS.id$COrW), SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x3ffc45fa71954470L, 0x834ba6b1a95f90d6L, 0x601bfff8ec49ee2bL, "WebassemblyText.structure.I32")));
+          break;
+        case 1:
+          state.push(SLinkOperations.getTarget(param, LINKS.id$COrW), SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x3ffc45fa71954470L, 0x834ba6b1a95f90d6L, 0x601bfff8ec49ee2cL, "WebassemblyText.structure.I64")));
+          break;
+        case 2:
+          state.push(SLinkOperations.getTarget(param, LINKS.id$COrW), SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x3ffc45fa71954470L, 0x834ba6b1a95f90d6L, 0x601bfff8ec49ee2eL, "WebassemblyText.structure.F32")));
+          break;
+        case 3:
+          state.push(SLinkOperations.getTarget(param, LINKS.id$COrW), SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x3ffc45fa71954470L, 0x834ba6b1a95f90d6L, 0x601bfff8ec49ee30L, "WebassemblyText.structure.F64")));
+          break;
       }
+
+      return;
     });
 
-    ListSequence.fromList(SLinkOperations.getChildren(fnc, LINKS.locals$$WTv)).visitAll(new IVisitor<SNode>() {
-      public void visit(SNode local) {
-        switch (enumSwitchIndex_x8dabo_a0a0a0a0a0e0o.indexNullable(SPropertyOperations.getEnum(local, PROPS.type$m6Yv))) {
-          case 0:
-            state.push(SLinkOperations.getTarget(local, LINKS.id$_qVY), SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x3ffc45fa71954470L, 0x834ba6b1a95f90d6L, 0x601bfff8ec49ee2bL, "WebassemblyText.structure.I32")));
-            break;
-          case 1:
-            state.push(SLinkOperations.getTarget(local, LINKS.id$_qVY), SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x3ffc45fa71954470L, 0x834ba6b1a95f90d6L, 0x601bfff8ec49ee2cL, "WebassemblyText.structure.I64")));
-            break;
-          case 2:
-            state.push(SLinkOperations.getTarget(local, LINKS.id$_qVY), SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x3ffc45fa71954470L, 0x834ba6b1a95f90d6L, 0x601bfff8ec49ee2eL, "WebassemblyText.structure.F32")));
-            break;
-          case 3:
-            state.push(SLinkOperations.getTarget(local, LINKS.id$_qVY), SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x3ffc45fa71954470L, 0x834ba6b1a95f90d6L, 0x601bfff8ec49ee30L, "WebassemblyText.structure.F64")));
-            break;
-        }
-        return;
+    ListSequence.fromList(SLinkOperations.getChildren(fnc, LINKS.locals$$WTv)).visitAll((local) -> {
+      switch (enumSwitchIndex1.indexNullable(SPropertyOperations.getEnum(local, PROPS.type$m6Yv))) {
+        case 0:
+          state.push(SLinkOperations.getTarget(local, LINKS.id$_qVY), SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x3ffc45fa71954470L, 0x834ba6b1a95f90d6L, 0x601bfff8ec49ee2bL, "WebassemblyText.structure.I32")));
+          break;
+        case 1:
+          state.push(SLinkOperations.getTarget(local, LINKS.id$_qVY), SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x3ffc45fa71954470L, 0x834ba6b1a95f90d6L, 0x601bfff8ec49ee2cL, "WebassemblyText.structure.I64")));
+          break;
+        case 2:
+          state.push(SLinkOperations.getTarget(local, LINKS.id$_qVY), SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x3ffc45fa71954470L, 0x834ba6b1a95f90d6L, 0x601bfff8ec49ee2eL, "WebassemblyText.structure.F32")));
+          break;
+        case 3:
+          state.push(SLinkOperations.getTarget(local, LINKS.id$_qVY), SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x3ffc45fa71954470L, 0x834ba6b1a95f90d6L, 0x601bfff8ec49ee30L, "WebassemblyText.structure.F64")));
+          break;
       }
+      return;
     });
 
     return state;
@@ -121,8 +111,8 @@ public class StackState {
     DequeSequence.fromDequeNew(newState.currStack).addSequence(DequeSequence.fromDequeNew(this.currStack));
     return newState;
   }
-  private static final EnumerationLiteralsIndex enumSwitchIndex_x8dabo_a0a0a0a0a0c0o = EnumerationLiteralsIndex.build(0x3ffc45fa71954470L, 0x834ba6b1a95f90d6L, 0x601bfff8ed2a9769L, 0x601bfff8ed2a976aL, 0x601bfff8ed2a976cL, 0x601bfff8ed2a9770L, 0x601bfff8ed2a9775L);
-  private static final EnumerationLiteralsIndex enumSwitchIndex_x8dabo_a0a0a0a0a0e0o = EnumerationLiteralsIndex.build(0x3ffc45fa71954470L, 0x834ba6b1a95f90d6L, 0x601bfff8ed2a9769L, 0x601bfff8ed2a976aL, 0x601bfff8ed2a976cL, 0x601bfff8ed2a9770L, 0x601bfff8ed2a9775L);
+  private static final EnumerationLiteralsIndex enumSwitchIndex = EnumerationLiteralsIndex.build(0x3ffc45fa71954470L, 0x834ba6b1a95f90d6L, 0x601bfff8ed2a9769L, 0x601bfff8ed2a976aL, 0x601bfff8ed2a976cL, 0x601bfff8ed2a9770L, 0x601bfff8ed2a9775L);
+  private static final EnumerationLiteralsIndex enumSwitchIndex1 = EnumerationLiteralsIndex.build(0x3ffc45fa71954470L, 0x834ba6b1a95f90d6L, 0x601bfff8ed2a9769L, 0x601bfff8ed2a976aL, 0x601bfff8ed2a976cL, 0x601bfff8ed2a9770L, 0x601bfff8ed2a9775L);
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink id$PkgV = MetaAdapterFactory.getContainmentLink(0x3ffc45fa71954470L, 0x834ba6b1a95f90d6L, 0x601bfff8ed2b2a4bL, 0x601bfff8ed2b2a56L, "id");

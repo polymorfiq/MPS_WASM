@@ -24,8 +24,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ValTypeContainer__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf0ceec7784bd4104L, 0xb53284a17dffbb8aL, 0x601bfff8ed7d6e6cL, "WebAssembly.structure.ValTypeContainer");
 
-  public static final SMethod<Integer> byte_size_id60rZZzHEXgh = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("byte_size").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("60rZZzHEXgh").build();
-  public static final SMethod<byte[]> bytes_id60rZZzHEXiv = new SMethodBuilder<byte[]>(new SJavaCompoundTypeImpl(byte[].class)).name("bytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("60rZZzHEXiv").build();
+  public static final SMethod<Integer> byte_size_id60rZZzHEXgh = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("byte_size").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6925410296616702993L).languageId(0xb53284a17dffbb8aL, 0xf0ceec7784bd4104L).build2();
+  public static final SMethod<byte[]> bytes_id60rZZzHEXiv = new SMethodBuilder<byte[]>(new SJavaCompoundTypeImpl(byte[].class)).name("bytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6925410296616703135L).languageId(0xb53284a17dffbb8aL, 0xf0ceec7784bd4104L).build2();
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(byte_size_id60rZZzHEXgh, bytes_id60rZZzHEXiv);
 
@@ -36,7 +36,7 @@ public final class ValTypeContainer__BehaviorDescriptor extends BaseBHDescriptor
     return 1;
   }
   /*package*/ static byte[] bytes_id60rZZzHEXiv(@NotNull SNode __thisNode__) {
-    switch (enumSwitchIndex_wtzyjn_a0a0k.indexNullable(SPropertyOperations.getEnum(__thisNode__, PROPS.valtype$$P7n))) {
+    switch (enumSwitchIndex.indexNullable(SPropertyOperations.getEnum(__thisNode__, PROPS.valtype$$P7n))) {
       case 0:
         return new byte[]{Bytes.u8Byte(0x7F)};
       case 1:
@@ -103,7 +103,7 @@ public final class ValTypeContainer__BehaviorDescriptor extends BaseBHDescriptor
   public SAbstractConcept getConcept() {
     return CONCEPT;
   }
-  private static final EnumerationLiteralsIndex enumSwitchIndex_wtzyjn_a0a0k = EnumerationLiteralsIndex.build(0xf0ceec7784bd4104L, 0xb53284a17dffbb8aL, 0x601bfff8ed7a49abL, 0x601bfff8ed7a49acL, 0x601bfff8ed7a49adL, 0x601bfff8ed7a49b0L, 0x601bfff8ed7a49b4L, 0x601bfff8ed7aef65L, 0x601bfff8ed7aef43L, 0x601bfff8ed7aef4cL);
+  private static final EnumerationLiteralsIndex enumSwitchIndex = EnumerationLiteralsIndex.build(0xf0ceec7784bd4104L, 0xb53284a17dffbb8aL, 0x601bfff8ed7a49abL, 0x601bfff8ed7a49acL, 0x601bfff8ed7a49adL, 0x601bfff8ed7a49b0L, 0x601bfff8ed7a49b4L, 0x601bfff8ed7aef65L, 0x601bfff8ed7aef43L, 0x601bfff8ed7aef4cL);
 
   private static final class PROPS {
     /*package*/ static final SProperty valtype$$P7n = MetaAdapterFactory.getProperty(0xf0ceec7784bd4104L, 0xb53284a17dffbb8aL, 0x601bfff8ed7d6e6cL, 0x601bfff8ed7d6e72L, "valtype");

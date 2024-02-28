@@ -17,7 +17,7 @@ import WebAssembly.structure.Bytes;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
-import jetbrains.mps.internal.collections.runtime.IVisitor;
+import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -26,8 +26,8 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class ActiveExplicitExprsElem__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf0ceec7784bd4104L, 0xb53284a17dffbb8aL, 0x39e7fc40f7e654ccL, "WebAssembly.structure.ActiveExplicitExprsElem");
 
-  public static final SMethod<Integer> byte_size_id60rZZzHEXgh = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("byte_size").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("60rZZzHEXgh").build();
-  public static final SMethod<byte[]> bytes_id60rZZzHEXiv = new SMethodBuilder<byte[]>(new SJavaCompoundTypeImpl(byte[].class)).name("bytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("60rZZzHEXiv").build();
+  public static final SMethod<Integer> byte_size_id60rZZzHEXgh = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("byte_size").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6925410296616702993L).languageId(0xb53284a17dffbb8aL, 0xf0ceec7784bd4104L).build2();
+  public static final SMethod<byte[]> bytes_id60rZZzHEXiv = new SMethodBuilder<byte[]>(new SJavaCompoundTypeImpl(byte[].class)).name("bytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6925410296616703135L).languageId(0xb53284a17dffbb8aL, 0xf0ceec7784bd4104L).build2();
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(byte_size_id60rZZzHEXgh, bytes_id60rZZzHEXiv);
 
@@ -39,11 +39,7 @@ public final class ActiveExplicitExprsElem__BehaviorDescriptor extends BaseBHDes
     byte[] vecLen = Bytes.u32BytesLeb128(ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.el$uC1Y)).count());
 
     final Wrappers._int exprsSize = new Wrappers._int(0);
-    ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.el$uC1Y)).visitAll(new IVisitor<SNode>() {
-      public void visit(SNode expr) {
-        exprsSize.value += (int) ByteSized__BehaviorDescriptor.byte_size_id60rZZzHEXgh.invoke(expr);
-      }
-    });
+    ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.el$uC1Y)).visitAll((expr) -> exprsSize.value += (int) ByteSized__BehaviorDescriptor.byte_size_id60rZZzHEXgh.invoke(expr));
     return opcode.length + (int) ByteSized__BehaviorDescriptor.byte_size_id60rZZzHEXgh.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.x$uCw0)) + (int) ByteSized__BehaviorDescriptor.byte_size_id60rZZzHEXgh.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.e$uBMX)) + (int) ByteSized__BehaviorDescriptor.byte_size_id60rZZzHEXgh.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.et$uPCS)) + vecLen.length + exprsSize.value;
   }
   /*package*/ static byte[] bytes_id60rZZzHEXiv(@NotNull SNode __thisNode__) {
@@ -70,8 +66,8 @@ public final class ActiveExplicitExprsElem__BehaviorDescriptor extends BaseBHDes
     System.arraycopy(vecLen, 0, bytes, i.value, vecLen.length);
     i.value += vecLen.length;
 
-    ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.el$uC1Y)).visitAll(new IVisitor<SNode>() {
-      public void visit(SNode expr) {
+    ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.el$uC1Y)).visitAll(new _FunctionTypes._void_P1_E0<SNode>() {
+      public void invoke(SNode expr) {
         byte[] exprBytes = ByteSized__BehaviorDescriptor.bytes_id60rZZzHEXiv.invoke(expr);
         System.arraycopy(exprBytes, 0, bytes, i.value, exprBytes.length);
         i.value += exprBytes.length;

@@ -67,7 +67,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "func");
     editorCell.setCellId("Constant_9kscu2_b0");
     Style style = new StyleImpl();
-    new section_itemnameStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    new section_itemnameStyleClass(this).apply(style, editorCell);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;

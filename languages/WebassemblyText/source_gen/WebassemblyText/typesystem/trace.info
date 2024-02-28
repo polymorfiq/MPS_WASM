@@ -607,7 +607,7 @@
       <node id="6925410296600521555" at="64,50,65,29" concept="8" />
       <node id="6925410296600521555" at="67,68,68,102" concept="8" />
       <node id="6925410296600521555" at="70,30,71,17" concept="8" />
-      <node id="6925410296600521555" at="73,0,74,0" concept="10" trace="enumSwitchIndex_srqsi2_a0b0b" />
+      <node id="6925410296600521555" at="73,0,74,0" concept="10" trace="enumSwitchIndex" />
       <node id="6925410296600521555" at="76,0,77,0" concept="10" trace="paramType$CULn" />
       <node id="6925410296600521555" at="80,0,81,0" concept="10" trace="id$COrW" />
       <node id="6925410296600521555" at="84,0,85,0" concept="10" trace="Param$Kb" />
@@ -658,157 +658,140 @@
   </root>
   <root nodeRef="r:53b811bf-ce98-4eeb-819f-783007083750(WebassemblyText.typesystem)/6925410296602309929">
     <file name="StackState.java">
-      <node id="6925410296600752591" at="23,0,24,0" concept="4" trace="currStack" />
-      <node id="6925410296600752781" at="25,23,26,77" concept="3" />
-      <node id="6925410296600867407" at="29,42,30,48" concept="7" />
-      <node id="6925410296600875518" at="30,48,31,68" concept="3" />
-      <node id="6925410296609647691" at="35,68,36,76" concept="8" />
-      <node id="6925410296609665583" at="37,5,38,0" concept="9" />
-      <node id="6925410296609665896" at="38,0,39,126" concept="8" />
-      <node id="6925410296606441869" at="44,45,45,130" concept="8" />
-      <node id="6925410296604367543" at="50,39,51,87" concept="7" />
-      <node id="6925410296604427677" at="51,87,52,0" concept="9" />
-      <node id="6925410296604541557" at="53,25,54,123" concept="8" />
-      <node id="6925410296604546992" at="55,12,56,18" concept="8" />
-      <node id="6925410296603645962" at="60,49,61,23" concept="7" />
-      <node id="6925410296603774547" at="63,180,64,181" concept="8" />
-      <node id="6925410296603659418" at="65,7,66,45" concept="3" />
-      <node id="6925410296603773494" at="67,5,68,0" concept="9" />
-      <node id="6925410296603781642" at="68,0,69,28" concept="8" />
-      <node id="6925410296603766333" at="72,65,73,46" concept="7" />
-      <node id="6925410296603766338" at="73,46,74,0" concept="9" />
-      <node id="6925410296603766356" at="78,17,79,233" concept="3" />
-      <node id="6925410296603766354" at="79,233,80,18" concept="1" />
-      <node id="6925410296603766371" at="81,17,82,233" concept="3" />
-      <node id="6925410296603766369" at="82,233,83,18" concept="1" />
-      <node id="6925410296603766388" at="84,17,85,233" concept="3" />
-      <node id="6925410296603766386" at="85,233,86,18" concept="1" />
-      <node id="6925410296603766404" at="87,17,88,233" concept="3" />
-      <node id="6925410296603766402" at="88,233,89,18" concept="1" />
-      <node id="8010509144868339126" at="90,9,91,0" concept="9" />
-      <node id="8010509144868338085" at="91,0,92,15" concept="8" />
-      <node id="6925410296607241896" at="94,7,95,0" concept="9" />
-      <node id="6925410296607716739" at="99,17,100,233" concept="3" />
-      <node id="6925410296607715645" at="100,233,101,18" concept="1" />
-      <node id="6925410296607742306" at="102,17,103,233" concept="3" />
-      <node id="6925410296607740974" at="103,233,104,18" concept="1" />
-      <node id="6925410296607775560" at="105,17,106,233" concept="3" />
-      <node id="6925410296607774359" at="106,233,107,18" concept="1" />
-      <node id="6925410296607799057" at="108,17,109,233" concept="3" />
-      <node id="6925410296607796962" at="109,233,110,18" concept="1" />
-      <node id="8010509144868345156" at="111,9,112,15" concept="8" />
-      <node id="6925410296603766420" at="114,7,115,0" concept="9" />
-      <node id="6925410296603766421" at="115,0,116,17" concept="8" />
-      <node id="6925410296600768547" at="119,29,120,43" concept="7" />
-      <node id="6925410296600770093" at="120,43,121,107" concept="3" />
-      <node id="6925410296600798919" at="121,107,122,20" concept="8" />
-      <node id="6925410296602309929" at="124,0,125,0" concept="10" trace="enumSwitchIndex_x8dabo_a0a0a0a0a0c0o" />
-      <node id="6925410296602309929" at="125,0,126,0" concept="10" trace="enumSwitchIndex_x8dabo_a0a0a0a0a0e0o" />
-      <node id="6925410296602309929" at="128,0,129,0" concept="10" trace="id$PkgV" />
-      <node id="6925410296602309929" at="129,0,130,0" concept="10" trace="idx$PjMT" />
-      <node id="6925410296602309929" at="130,0,131,0" concept="10" trace="typeuse$ss1_" />
-      <node id="6925410296602309929" at="131,0,132,0" concept="10" trace="params$hnVB" />
-      <node id="6925410296602309929" at="132,0,133,0" concept="10" trace="id$COrW" />
-      <node id="6925410296602309929" at="133,0,134,0" concept="10" trace="locals$$WTv" />
-      <node id="6925410296602309929" at="134,0,135,0" concept="10" trace="id$_qVY" />
-      <node id="6925410296602309929" at="138,0,139,0" concept="10" trace="value$EujW" />
-      <node id="6925410296602309929" at="139,0,140,0" concept="10" trace="name$uQ1W" />
-      <node id="6925410296602309929" at="140,0,141,0" concept="10" trace="paramType$CULn" />
-      <node id="6925410296602309929" at="141,0,142,0" concept="10" trace="type$m6Yv" />
-      <node id="6925410296602309929" at="145,0,146,0" concept="10" trace="Func$9L" />
-      <node id="6925410296604534849" at="55,10,57,5" concept="0" />
-      <node id="6925410296600746410" at="25,0,28,0" concept="2" trace="StackState#()V" />
-      <node id="6925410296609625795" at="34,45,37,5" concept="5" />
-      <node id="6925410296603865929" at="44,0,47,0" concept="6" trace="accept#(LWebassemblyText/typesystem/StackItem;)Z" />
-      <node id="6925410296603660418" at="62,28,65,7" concept="5" />
-      <node id="6925410296600850863" at="29,0,33,0" concept="6" trace="push#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="6925410296605118265" at="42,45,47,7" concept="8" />
-      <node id="6925410296604431652" at="52,0,57,5" concept="5" />
-      <node id="6925410296600766844" at="119,0,124,0" concept="6" trace="clone#()LWebassemblyText/typesystem/StackState;" />
-      <node id="6925410296603645675" at="61,23,67,5" concept="13" />
-      <node id="6925410296604023409" at="34,0,41,0" concept="6" trace="itemAtIndex#(Lorg/jetbrains/mps/openapi/model/SNode;)LWebassemblyText/typesystem/StackItem;" />
-      <node id="6925410296603865918" at="42,0,49,0" concept="6" trace="itemAtId#(Lorg/jetbrains/mps/openapi/model/SNode;)LWebassemblyText/typesystem/StackItem;" />
-      <node id="6925410296603879912" at="50,0,59,0" concept="6" trace="itemAtIdx#(I)LWebassemblyText/typesystem/StackItem;" />
-      <node id="6925410296603595814" at="60,0,71,0" concept="11" trace="atInstr#(Lorg/jetbrains/mps/openapi/model/SNode;)LWebassemblyText/typesystem/StackState;" />
-      <node id="6925410296603766348" at="76,38,90,9" concept="12" />
-      <node id="6925410296607357119" at="97,38,111,9" concept="12" />
-      <node id="6925410296607284186" at="97,0,114,0" concept="6" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="6925410296603766345" at="76,0,94,0" concept="6" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="6925410296607242917" at="95,0,114,7" concept="3" />
-      <node id="6925410296603766339" at="74,0,94,7" concept="3" />
-      <node id="6925410296603766330" at="72,0,118,0" concept="11" trace="stateAtFuncIndex#(Lorg/jetbrains/mps/openapi/model/SNode;I)LWebassemblyText/typesystem/StackState;" />
-      <scope id="6925410296600746414" at="25,23,26,77" />
-      <scope id="6925410296609625797" at="35,68,36,76" />
-      <scope id="6925410296603865930" at="44,45,45,130" />
-      <scope id="6925410296604431654" at="53,25,54,123" />
-      <scope id="6925410296604534850" at="55,12,56,18" />
-      <scope id="6925410296603660420" at="63,180,64,181" />
-      <scope id="6925410296600850866" at="29,42,31,68">
+      <node id="6925410296600752591" at="21,0,22,0" concept="4" trace="currStack" />
+      <node id="6925410296600752781" at="23,23,24,74" concept="3" />
+      <node id="6925410296600867407" at="27,42,28,48" concept="7" />
+      <node id="6925410296600875518" at="28,48,29,68" concept="3" />
+      <node id="6925410296609647691" at="33,68,34,76" concept="8" />
+      <node id="6925410296609665583" at="35,5,36,0" concept="9" />
+      <node id="6925410296609665896" at="36,0,37,126" concept="8" />
+      <node id="6925410296605118265" at="40,45,41,190" concept="8" />
+      <node id="6925410296604367543" at="44,39,45,102" concept="7" />
+      <node id="6925410296604427677" at="45,102,46,0" concept="9" />
+      <node id="6925410296604541557" at="47,25,48,115" concept="8" />
+      <node id="6925410296604546992" at="49,12,50,18" concept="8" />
+      <node id="6925410296603645962" at="54,49,55,23" concept="7" />
+      <node id="6925410296603774547" at="57,180,58,181" concept="8" />
+      <node id="6925410296603659418" at="59,7,60,45" concept="3" />
+      <node id="6925410296603773494" at="61,5,62,0" concept="9" />
+      <node id="6925410296603781642" at="62,0,63,28" concept="8" />
+      <node id="6925410296603766333" at="66,65,67,46" concept="7" />
+      <node id="6925410296603766338" at="67,46,68,0" concept="9" />
+      <node id="6925410296603766356" at="71,15,72,231" concept="3" />
+      <node id="6925410296603766354" at="72,231,73,16" concept="1" />
+      <node id="6925410296603766371" at="74,15,75,231" concept="3" />
+      <node id="6925410296603766369" at="75,231,76,16" concept="1" />
+      <node id="6925410296603766388" at="77,15,78,231" concept="3" />
+      <node id="6925410296603766386" at="78,231,79,16" concept="1" />
+      <node id="6925410296603766404" at="80,15,81,231" concept="3" />
+      <node id="6925410296603766402" at="81,231,82,16" concept="1" />
+      <node id="8010509144868339126" at="83,7,84,0" concept="9" />
+      <node id="8010509144868338085" at="84,0,85,13" concept="8" />
+      <node id="6925410296607241896" at="86,7,87,0" concept="9" />
+      <node id="6925410296607716739" at="90,15,91,231" concept="3" />
+      <node id="6925410296607715645" at="91,231,92,16" concept="1" />
+      <node id="6925410296607742306" at="93,15,94,231" concept="3" />
+      <node id="6925410296607740974" at="94,231,95,16" concept="1" />
+      <node id="6925410296607775560" at="96,15,97,231" concept="3" />
+      <node id="6925410296607774359" at="97,231,98,16" concept="1" />
+      <node id="6925410296607799057" at="99,15,100,231" concept="3" />
+      <node id="6925410296607796962" at="100,231,101,16" concept="1" />
+      <node id="8010509144868345156" at="102,7,103,13" concept="8" />
+      <node id="6925410296603766420" at="104,7,105,0" concept="9" />
+      <node id="6925410296603766421" at="105,0,106,17" concept="8" />
+      <node id="6925410296600768547" at="109,29,110,43" concept="7" />
+      <node id="6925410296600770093" at="110,43,111,107" concept="3" />
+      <node id="6925410296600798919" at="111,107,112,20" concept="8" />
+      <node id="6925410296602309929" at="114,0,115,0" concept="10" trace="enumSwitchIndex" />
+      <node id="6925410296602309929" at="115,0,116,0" concept="10" trace="enumSwitchIndex1" />
+      <node id="6925410296602309929" at="118,0,119,0" concept="10" trace="id$PkgV" />
+      <node id="6925410296602309929" at="119,0,120,0" concept="10" trace="idx$PjMT" />
+      <node id="6925410296602309929" at="120,0,121,0" concept="10" trace="typeuse$ss1_" />
+      <node id="6925410296602309929" at="121,0,122,0" concept="10" trace="params$hnVB" />
+      <node id="6925410296602309929" at="122,0,123,0" concept="10" trace="id$COrW" />
+      <node id="6925410296602309929" at="123,0,124,0" concept="10" trace="locals$$WTv" />
+      <node id="6925410296602309929" at="124,0,125,0" concept="10" trace="id$_qVY" />
+      <node id="6925410296602309929" at="128,0,129,0" concept="10" trace="value$EujW" />
+      <node id="6925410296602309929" at="129,0,130,0" concept="10" trace="name$uQ1W" />
+      <node id="6925410296602309929" at="130,0,131,0" concept="10" trace="paramType$CULn" />
+      <node id="6925410296602309929" at="131,0,132,0" concept="10" trace="type$m6Yv" />
+      <node id="6925410296602309929" at="135,0,136,0" concept="10" trace="Func$9L" />
+      <node id="6925410296604534849" at="49,10,51,5" concept="0" />
+      <node id="6925410296600746410" at="23,0,26,0" concept="2" trace="StackState#()V" />
+      <node id="6925410296609625795" at="32,45,35,5" concept="5" />
+      <node id="6925410296603865918" at="40,0,43,0" concept="6" trace="itemAtId#(Lorg/jetbrains/mps/openapi/model/SNode;)LWebassemblyText/typesystem/StackItem;" />
+      <node id="6925410296603660418" at="56,28,59,7" concept="5" />
+      <node id="6925410296600850863" at="27,0,31,0" concept="6" trace="push#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="6925410296604431652" at="46,0,51,5" concept="5" />
+      <node id="6925410296600766844" at="109,0,114,0" concept="6" trace="clone#()LWebassemblyText/typesystem/StackState;" />
+      <node id="6925410296603645675" at="55,23,61,5" concept="13" />
+      <node id="6925410296604023409" at="32,0,39,0" concept="6" trace="itemAtIndex#(Lorg/jetbrains/mps/openapi/model/SNode;)LWebassemblyText/typesystem/StackItem;" />
+      <node id="6925410296603879912" at="44,0,53,0" concept="6" trace="itemAtIdx#(I)LWebassemblyText/typesystem/StackItem;" />
+      <node id="6925410296603595814" at="54,0,65,0" concept="11" trace="atInstr#(Lorg/jetbrains/mps/openapi/model/SNode;)LWebassemblyText/typesystem/StackState;" />
+      <node id="6925410296603766348" at="69,147,83,7" concept="12" />
+      <node id="6925410296607357119" at="88,100,102,7" concept="12" />
+      <node id="6925410296607242917" at="87,0,104,7" concept="3" />
+      <node id="6925410296603766339" at="68,0,86,7" concept="3" />
+      <node id="6925410296603766330" at="66,0,108,0" concept="11" trace="stateAtFuncIndex#(Lorg/jetbrains/mps/openapi/model/SNode;I)LWebassemblyText/typesystem/StackState;" />
+      <scope id="6925410296600746414" at="23,23,24,74" />
+      <scope id="6925410296609625797" at="33,68,34,76" />
+      <scope id="6925410296603865920" at="40,45,41,190" />
+      <scope id="6925410296604431654" at="47,25,48,115" />
+      <scope id="6925410296604534850" at="49,12,50,18" />
+      <scope id="6925410296603660420" at="57,180,58,181" />
+      <scope id="6925410296600850866" at="27,42,29,68">
         <var name="newItem" id="6925410296600867408" />
       </scope>
-      <scope id="6925410296603766354" at="78,17,80,18" />
-      <scope id="6925410296603766369" at="81,17,83,18" />
-      <scope id="6925410296603766386" at="84,17,86,18" />
-      <scope id="6925410296603766402" at="87,17,89,18" />
-      <scope id="6925410296607715645" at="99,17,101,18" />
-      <scope id="6925410296607740974" at="102,17,104,18" />
-      <scope id="6925410296607774359" at="105,17,107,18" />
-      <scope id="6925410296607796962" at="108,17,110,18" />
-      <scope id="6925410296600746410" at="25,0,28,0" />
-      <scope id="6925410296603865929" at="44,0,47,0">
-        <var name="item" id="6925410296603865929" />
+      <scope id="6925410296603766354" at="71,15,73,16" />
+      <scope id="6925410296603766369" at="74,15,76,16" />
+      <scope id="6925410296603766386" at="77,15,79,16" />
+      <scope id="6925410296603766402" at="80,15,82,16" />
+      <scope id="6925410296607715645" at="90,15,92,16" />
+      <scope id="6925410296607740974" at="93,15,95,16" />
+      <scope id="6925410296607774359" at="96,15,98,16" />
+      <scope id="6925410296607796962" at="99,15,101,16" />
+      <scope id="6925410296600746410" at="23,0,26,0" />
+      <scope id="6925410296603865918" at="40,0,43,0">
+        <var name="id" id="6925410296603865949" />
       </scope>
-      <scope id="6925410296600766847" at="119,29,122,20">
+      <scope id="6925410296600766847" at="109,29,112,20">
         <var name="newState" id="6925410296600768548" />
       </scope>
-      <scope id="6925410296600850863" at="29,0,33,0">
+      <scope id="6925410296600850863" at="27,0,31,0">
         <var name="id" id="6925410296600852146" />
         <var name="type" id="6925410296600852786" />
       </scope>
-      <scope id="6925410296603645677" at="62,28,66,45" />
-      <scope id="6925410296604023410" at="34,45,39,126" />
-      <scope id="6925410296603865920" at="42,45,47,7" />
-      <scope id="6925410296600766844" at="119,0,124,0" />
-      <scope id="6925410296604023409" at="34,0,41,0">
+      <scope id="6925410296603645677" at="56,28,60,45" />
+      <scope id="6925410296604023410" at="32,45,37,126" />
+      <scope id="6925410296600766844" at="109,0,114,0" />
+      <scope id="6925410296604023409" at="32,0,39,0">
         <var name="index" id="6925410296604023432" />
       </scope>
-      <scope id="6925410296603865918" at="42,0,49,0">
-        <var name="id" id="6925410296603865949" />
-      </scope>
-      <scope id="6925410296603879913" at="50,39,57,5">
+      <scope id="6925410296603879913" at="44,39,51,5">
         <var name="listSize" id="6925410296604367546" />
       </scope>
-      <scope id="6925410296603879912" at="50,0,59,0">
+      <scope id="6925410296603879912" at="44,0,53,0">
         <var name="idx" id="6925410296603879944" />
       </scope>
-      <scope id="6925410296603595815" at="60,49,69,28">
+      <scope id="6925410296603595815" at="54,49,63,28">
         <var name="curr" id="6925410296603645965" />
       </scope>
-      <scope id="6925410296603595814" at="60,0,71,0">
+      <scope id="6925410296603595814" at="54,0,65,0">
         <var name="instr" id="6925410296603596026" />
       </scope>
-      <scope id="6925410296607284187" at="97,38,112,15" />
-      <scope id="6925410296603766346" at="76,38,92,15" />
-      <scope id="6925410296607284186" at="97,0,114,0">
-        <var name="local" id="6925410296607284186" />
-      </scope>
-      <scope id="6925410296603766345" at="76,0,94,0">
-        <var name="param" id="6925410296603766345" />
-      </scope>
-      <scope id="6925410296603766332" at="72,65,116,17">
+      <scope id="6925410296607284187" at="88,100,103,13" />
+      <scope id="6925410296603766346" at="69,147,85,13" />
+      <scope id="6925410296603766332" at="66,65,106,17">
         <var name="state" id="6925410296603766334" />
       </scope>
-      <scope id="6925410296603766330" at="72,0,118,0">
+      <scope id="6925410296603766330" at="66,0,108,0">
         <var name="fnc" id="6925410296603766425" />
         <var name="idx" id="6925410296603766427" />
       </scope>
-      <unit id="6925410296602309929" at="144,0,147,0" name="WebassemblyText.typesystem.StackState$CONCEPTS" />
-      <unit id="6925410296603865929" at="43,68,47,5" name="WebassemblyText.typesystem.StackState$1" />
-      <unit id="6925410296602309929" at="137,0,143,0" name="WebassemblyText.typesystem.StackState$PROPS" />
-      <unit id="6925410296602309929" at="127,0,136,0" name="WebassemblyText.typesystem.StackState$LINKS" />
-      <unit id="6925410296607284186" at="96,92,114,5" name="WebassemblyText.typesystem.StackState$3" />
-      <unit id="6925410296603766345" at="75,139,94,5" name="WebassemblyText.typesystem.StackState$2" />
-      <unit id="6925410296602309929" at="22,0,148,0" name="WebassemblyText.typesystem.StackState" />
+      <unit id="6925410296602309929" at="134,0,137,0" name="WebassemblyText.typesystem.StackState$CONCEPTS" />
+      <unit id="6925410296602309929" at="127,0,133,0" name="WebassemblyText.typesystem.StackState$PROPS" />
+      <unit id="6925410296602309929" at="117,0,126,0" name="WebassemblyText.typesystem.StackState$LINKS" />
+      <unit id="6925410296602309929" at="20,0,138,0" name="WebassemblyText.typesystem.StackState" />
     </file>
   </root>
   <root nodeRef="r:53b811bf-ce98-4eeb-819f-783007083750(WebassemblyText.typesystem)/6925410296603614877">

@@ -16,8 +16,8 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.internal.collections.runtime.IVisitor;
 import WebAssembly.structure.Bytes;
+import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -26,8 +26,8 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class TypeSection__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf0ceec7784bd4104L, 0xb53284a17dffbb8aL, 0x601bfff8edaa532aL, "WebAssembly.structure.TypeSection");
 
-  public static final SMethod<Integer> byte_size_id60rZZzHEXgh = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("byte_size").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("60rZZzHEXgh").build();
-  public static final SMethod<byte[]> bytes_id60rZZzHEXiv = new SMethodBuilder<byte[]>(new SJavaCompoundTypeImpl(byte[].class)).name("bytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("60rZZzHEXiv").build();
+  public static final SMethod<Integer> byte_size_id60rZZzHEXgh = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("byte_size").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6925410296616702993L).languageId(0xb53284a17dffbb8aL, 0xf0ceec7784bd4104L).build2();
+  public static final SMethod<byte[]> bytes_id60rZZzHEXiv = new SMethodBuilder<byte[]>(new SJavaCompoundTypeImpl(byte[].class)).name("bytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6925410296616703135L).languageId(0xb53284a17dffbb8aL, 0xf0ceec7784bd4104L).build2();
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(byte_size_id60rZZzHEXgh, bytes_id60rZZzHEXiv);
 
@@ -36,11 +36,7 @@ public final class TypeSection__BehaviorDescriptor extends BaseBHDescriptor {
 
   /*package*/ static int byte_size_id60rZZzHEXgh(@NotNull SNode __thisNode__) {
     final Wrappers._int content_size = new Wrappers._int(0);
-    ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.ft$88oc)).visitAll(new IVisitor<SNode>() {
-      public void visit(SNode data) {
-        content_size.value += (int) ByteSized__BehaviorDescriptor.byte_size_id60rZZzHEXgh.invoke(data);
-      }
-    });
+    ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.ft$88oc)).visitAll((data) -> content_size.value += (int) ByteSized__BehaviorDescriptor.byte_size_id60rZZzHEXgh.invoke(data));
     byte[] count = Bytes.u32BytesLeb128(ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.ft$88oc)).count());
     byte[] byteSize = Bytes.u32BytesLeb128(content_size.value + count.length);
 
@@ -53,8 +49,8 @@ public final class TypeSection__BehaviorDescriptor extends BaseBHDescriptor {
 
     final Wrappers._int i = new Wrappers._int(1);
     final Wrappers._int content_size = new Wrappers._int(0);
-    ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.ft$88oc)).visitAll(new IVisitor<SNode>() {
-      public void visit(SNode data) {
+    ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.ft$88oc)).visitAll(new _FunctionTypes._void_P1_E0<SNode>() {
+      public void invoke(SNode data) {
         content_size.value += (int) ByteSized__BehaviorDescriptor.byte_size_id60rZZzHEXgh.invoke(data);
       }
     });
@@ -66,12 +62,10 @@ public final class TypeSection__BehaviorDescriptor extends BaseBHDescriptor {
     System.arraycopy(count, 0, data, i.value, count.length);
     i.value += count.length;
 
-    ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.ft$88oc)).visitAll(new IVisitor<SNode>() {
-      public void visit(SNode item) {
-        byte[] itemBytes = ByteSized__BehaviorDescriptor.bytes_id60rZZzHEXiv.invoke(item);
-        System.arraycopy(itemBytes, 0, data, i.value, itemBytes.length);
-        i.value += itemBytes.length;
-      }
+    ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.ft$88oc)).visitAll((item) -> {
+      byte[] itemBytes = ByteSized__BehaviorDescriptor.bytes_id60rZZzHEXiv.invoke(item);
+      System.arraycopy(itemBytes, 0, data, i.value, itemBytes.length);
+      i.value += itemBytes.length;
     });
 
     return data;

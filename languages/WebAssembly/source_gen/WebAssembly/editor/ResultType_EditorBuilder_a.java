@@ -57,7 +57,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_data");
     Style style = new StyleImpl();
-    new valtypeStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    new valtypeStyleClass(this).apply(style, editorCell);
     editorCell.getStyle().putAll(style);
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;

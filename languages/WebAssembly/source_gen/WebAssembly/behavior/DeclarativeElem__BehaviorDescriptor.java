@@ -17,7 +17,6 @@ import WebAssembly.structure.Bytes;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
-import jetbrains.mps.internal.collections.runtime.IVisitor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
@@ -29,8 +28,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class DeclarativeElem__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf0ceec7784bd4104L, 0xb53284a17dffbb8aL, 0x39e7fc40f7e57b82L, "WebAssembly.structure.DeclarativeElem");
 
-  public static final SMethod<Integer> byte_size_id60rZZzHEXgh = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("byte_size").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("60rZZzHEXgh").build();
-  public static final SMethod<byte[]> bytes_id60rZZzHEXiv = new SMethodBuilder<byte[]>(new SJavaCompoundTypeImpl(byte[].class)).name("bytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("60rZZzHEXiv").build();
+  public static final SMethod<Integer> byte_size_id60rZZzHEXgh = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("byte_size").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6925410296616702993L).languageId(0xb53284a17dffbb8aL, 0xf0ceec7784bd4104L).build2();
+  public static final SMethod<byte[]> bytes_id60rZZzHEXiv = new SMethodBuilder<byte[]>(new SJavaCompoundTypeImpl(byte[].class)).name("bytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6925410296616703135L).languageId(0xb53284a17dffbb8aL, 0xf0ceec7784bd4104L).build2();
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(byte_size_id60rZZzHEXgh, bytes_id60rZZzHEXiv);
 
@@ -42,11 +41,7 @@ public final class DeclarativeElem__BehaviorDescriptor extends BaseBHDescriptor 
     byte[] vecLen = Bytes.u32BytesLeb128(ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.y$$MFY)).count());
 
     final Wrappers._int funcSize = new Wrappers._int(0);
-    ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.y$$MFY)).visitAll(new IVisitor<SNode>() {
-      public void visit(SNode idx) {
-        funcSize.value += (int) ByteSized__BehaviorDescriptor.byte_size_id60rZZzHEXgh.invoke(idx);
-      }
-    });
+    ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.y$$MFY)).visitAll((idx) -> funcSize.value += (int) ByteSized__BehaviorDescriptor.byte_size_id60rZZzHEXgh.invoke(idx));
     return opcode.length + 1 + vecLen.length + funcSize.value;
   }
   /*package*/ static byte[] bytes_id60rZZzHEXiv(@NotNull SNode __thisNode__) {
@@ -57,7 +52,7 @@ public final class DeclarativeElem__BehaviorDescriptor extends BaseBHDescriptor 
     System.arraycopy(opcode, 0, bytes, i.value, opcode.length);
     i.value += opcode.length;
 
-    switch (enumSwitchIndex_23580t_a0h0k.indexNullable(SPropertyOperations.getEnum(__thisNode__, PROPS.et$ykMt))) {
+    switch (enumSwitchIndex.indexNullable(SPropertyOperations.getEnum(__thisNode__, PROPS.et$ykMt))) {
       case 0:
         bytes[i.value] = 0x00;
         break;
@@ -68,12 +63,10 @@ public final class DeclarativeElem__BehaviorDescriptor extends BaseBHDescriptor 
     System.arraycopy(vecLen, 0, bytes, i.value, vecLen.length);
     i.value += vecLen.length;
 
-    ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.y$$MFY)).visitAll(new IVisitor<SNode>() {
-      public void visit(SNode idx) {
-        byte[] idxBytes = ByteSized__BehaviorDescriptor.bytes_id60rZZzHEXiv.invoke(idx);
-        System.arraycopy(idxBytes, 0, bytes, i.value, idxBytes.length);
-        i.value += idxBytes.length;
-      }
+    ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.y$$MFY)).visitAll((idx) -> {
+      byte[] idxBytes = ByteSized__BehaviorDescriptor.bytes_id60rZZzHEXiv.invoke(idx);
+      System.arraycopy(idxBytes, 0, bytes, i.value, idxBytes.length);
+      i.value += idxBytes.length;
     });
 
     return bytes;
@@ -126,7 +119,7 @@ public final class DeclarativeElem__BehaviorDescriptor extends BaseBHDescriptor 
   public SAbstractConcept getConcept() {
     return CONCEPT;
   }
-  private static final EnumerationLiteralsIndex enumSwitchIndex_23580t_a0h0k = EnumerationLiteralsIndex.build(0xf0ceec7784bd4104L, 0xb53284a17dffbb8aL, 0x39e7fc40f7e3806aL, 0x39e7fc40f7e3806bL);
+  private static final EnumerationLiteralsIndex enumSwitchIndex = EnumerationLiteralsIndex.build(0xf0ceec7784bd4104L, 0xb53284a17dffbb8aL, 0x39e7fc40f7e3806aL, 0x39e7fc40f7e3806bL);
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink y$$MFY = MetaAdapterFactory.getContainmentLink(0xf0ceec7784bd4104L, 0xb53284a17dffbb8aL, 0x39e7fc40f7e57b82L, 0x39e7fc40f7e57b84L, "y");

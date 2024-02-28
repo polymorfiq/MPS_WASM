@@ -8,11 +8,11 @@ import java.util.Collection;
 import org.jetbrains.mps.openapi.language.SLanguage;
 import jetbrains.mps.smodel.runtime.ILanguageAspect;
 import jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor;
-import BinaryGen.runtime.runtime.BinaryGeneratorAspectDescriptor;
-import WebAssembly.binaryGen.BinaryGeneratorDescriptor;
 import jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor;
 import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
 import WebAssembly.editor.EditorAspectDescriptorImpl;
+import jetbrains.mps.smodel.runtime.MakeAspectDescriptor;
+import WebAssembly.plugin.FacetAspectDescriptor;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConceptPresentationAspect;
 import WebAssembly.structure.ConceptPresentationAspectImpl;
@@ -49,16 +49,14 @@ public class Language extends LanguageRuntime {
     if (aspectClass == BehaviorAspectDescriptor.class) {
       return aspectClass.cast(new WebAssembly.behavior.BehaviorAspectDescriptor());
     }
-    if (aspectClass.getName().equals("BinaryGen.runtime.runtime.BinaryGeneratorAspectDescriptor")) {
-      if (aspectClass == BinaryGeneratorAspectDescriptor.class) {
-        return (T) new BinaryGeneratorDescriptor();
-      }
-    }
     if (aspectClass == ConstraintsAspectDescriptor.class) {
       return aspectClass.cast(new WebAssembly.constraints.ConstraintsAspectDescriptor());
     }
     if (aspectClass == EditorAspectDescriptor.class) {
       return aspectClass.cast(new EditorAspectDescriptorImpl());
+    }
+    if (aspectClass == MakeAspectDescriptor.class) {
+      return aspectClass.cast(new FacetAspectDescriptor());
     }
     if (aspectClass == StructureAspectDescriptor.class) {
       return aspectClass.cast(new WebAssembly.structure.StructureAspectDescriptor());

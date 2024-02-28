@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root>
+    <file name="FacetAspectDescriptor.java">
+      <unit at="8,0,18,0" name="WebAssembly.plugin.FacetAspectDescriptor" />
+    </file>
+    <file name="FacetManifest.java">
+      <unit at="11,0,23,0" name="WebAssembly.plugin.FacetManifest" />
+    </file>
+  </root>
+  <root nodeRef="r:ae33a562-fc3e-4ad0-897e-edad0c105358(WebAssembly.plugin)/8945660651030411673">
+    <file name="BuildBinaryWASM_Facet.java">
+      <node id="8945660651030411673" at="51,0,52,0" concept="3" trace="targets" />
+      <node id="8945660651030411673" at="52,0,53,0" concept="3" trace="name" />
+      <node id="8945660651030411685" at="53,34,54,75" concept="2" />
+      <node id="8945660651030411673" at="56,38,57,19" concept="8" />
+      <node id="8945660651030411673" at="59,43,60,16" concept="8" />
+      <node id="8945660651030411673" at="62,43,63,158" concept="8" />
+      <node id="8945660651030411673" at="65,43,66,16" concept="8" />
+      <node id="8945660651030411673" at="68,32,69,21" concept="8" />
+      <node id="8945660651030411673" at="71,57,72,34" concept="8" />
+      <node id="8945660651030411685" at="75,0,76,0" concept="10" trace="name" />
+      <node id="8945660651030411687" at="81,173,82,56" concept="7" />
+      <node id="8945660651030411687" at="82,56,83,86" concept="7" />
+      <node id="8945660651104211199" at="85,19,86,90" concept="7" />
+      <node id="8945660651104229808" at="86,90,87,0" concept="9" />
+      <node id="8945660651101202513" at="88,77,89,112" concept="7" />
+      <node id="8945660651102622532" at="89,112,90,0" concept="9" />
+      <node id="8945660651102629562" at="90,0,91,70" concept="7" />
+      <node id="8945660651102585546" at="91,70,92,85" concept="7" />
+      <node id="8945660651102594265" at="93,68,94,102" concept="2" />
+      <node id="8945660651101454774" at="95,17,96,0" concept="9" />
+      <node id="8945660651104246092" at="99,113,100,98" concept="7" />
+      <node id="8945660651105371191" at="100,98,101,0" concept="9" />
+      <node id="8945660651099554822" at="102,23,103,99" concept="7" />
+      <node id="8945660651099554822" at="103,99,104,106" concept="7" />
+      <node id="8945660651099554822" at="104,106,105,94" concept="7" />
+      <node id="8945660651099644522" at="105,94,106,139" concept="7" />
+      <node id="8945660651103216646" at="108,31,109,135" concept="7" />
+      <node id="8945660651104238557" at="109,135,110,0" concept="9" />
+      <node id="8945660651101852130" at="110,0,111,102" concept="7" />
+      <node id="8945660651101919279" at="111,102,112,105" concept="2" />
+      <node id="8945660651102017377" at="112,105,113,105" concept="2" />
+      <node id="8945660651102053016" at="115,35,116,112" concept="2" />
+      <node id="8945660651102393971" at="117,55,118,150" concept="2" />
+      <node id="8945660651102432490" at="120,31,121,0" concept="9" />
+      <node id="8945660651102437056" at="121,0,122,43" concept="2" />
+      <node id="8945660651102460961" at="122,43,123,43" concept="2" />
+      <node id="8945660651104528085" at="123,43,124,0" concept="9" />
+      <node id="8945660651104547153" at="124,0,125,74" concept="7" />
+      <node id="8945660651104412521" at="125,74,126,78" concept="2" />
+      <node id="8945660651104740692" at="126,78,127,0" concept="9" />
+      <node id="8945660651102269072" at="127,0,128,149" concept="2" />
+      <node id="8945660651102182245" at="129,51,130,146" concept="2" />
+      <node id="8945660651105530122" at="133,23,134,0" concept="9" />
+      <node id="8945660651105023303" at="134,0,135,66" concept="2" />
+      <node id="8945660651102708715" at="137,21,138,0" concept="9" />
+      <node id="8945660651104078865" at="140,15,141,0" concept="9" />
+      <node id="8945660651105048958" at="141,0,142,161" concept="2" />
+      <node id="8945660651104085258" at="142,161,143,61" concept="8" />
+      <node id="8945660651030411687" at="144,20,145,37" concept="2" />
+      <node id="8945660651030411687" at="145,37,146,61" concept="8" />
+      <node id="8945660651030411685" at="151,35,152,18" concept="8" />
+      <node id="8945660651030411685" at="154,46,155,18" concept="8" />
+      <node id="8945660651030411685" at="157,43,158,117" concept="8" />
+      <node id="8945660651030411685" at="160,47,161,18" concept="8" />
+      <node id="8945660651030411685" at="163,44,164,177" concept="8" />
+      <node id="8945660651030411685" at="166,35,167,18" concept="8" />
+      <node id="8945660651030411685" at="169,33,170,19" concept="8" />
+      <node id="8945660651030411685" at="172,36,173,18" concept="8" />
+      <node id="8945660651030411685" at="175,37,176,18" concept="8" />
+      <node id="8945660651030411685" at="178,65,179,111" concept="7" />
+      <node id="8945660651030411685" at="179,111,180,60" concept="2" />
+      <node id="8945660651030411685" at="180,60,181,16" concept="8" />
+      <node id="8945660651030411685" at="183,66,184,18" concept="8" />
+      <node id="8945660651030411685" at="186,49,187,18" concept="8" />
+      <node id="8945660651030411685" at="189,61,190,34" concept="7" />
+      <node id="8945660651030411685" at="190,34,191,15" concept="8" />
+      <node id="8945660651030411673" at="207,0,208,0" concept="10" trace="Module$jY" />
+      <node id="8945660651030411673" at="211,0,212,0" concept="10" trace="name$MnvL" />
+      <node id="8945660651030411673" at="215,0,216,0" concept="10" trace="sections$6WTp" />
+      <node id="8945660651030411685" at="76,0,78,0" concept="1" trace="Target_buildWasmFiles#()V" />
+      <node id="8945660651030411673" at="195,0,197,0" concept="1" trace="TargetProperties#()V" />
+      <node id="8945660651030411673" at="197,0,199,0" concept="6" trace="storeValues#(Ljava/util/Map;Ljetbrains/mps/make/script/IPropertiesPool;)V" />
+      <node id="8945660651030411673" at="53,0,56,0" concept="1" trace="BuildBinaryWASM_Facet#()V" />
+      <node id="8945660651030411673" at="56,0,59,0" concept="6" trace="targets#()Ljava/lang/Iterable;" />
+      <node id="8945660651030411673" at="59,0,62,0" concept="6" trace="optional#()Ljava/lang/Iterable;" />
+      <node id="8945660651030411673" at="62,0,65,0" concept="6" trace="required#()Ljava/lang/Iterable;" />
+      <node id="8945660651030411673" at="65,0,68,0" concept="6" trace="extended#()Ljava/lang/Iterable;" />
+      <node id="8945660651030411673" at="68,0,71,0" concept="6" trace="getName#()Ljetbrains/mps/make/facet/IFacet/Name;" />
+      <node id="8945660651030411673" at="71,0,74,0" concept="6" trace="propertiesPersistence#()Ljetbrains/mps/make/resources/IPropertiesPersistence;" />
+      <node id="8945660651102591177" at="92,85,95,17" concept="5" />
+      <node id="8945660651030411685" at="151,0,154,0" concept="6" trace="createConfig#()Ljetbrains/mps/make/script/IConfig;" />
+      <node id="8945660651030411685" at="154,0,157,0" concept="6" trace="notAfter#()Ljava/lang/Iterable;" />
+      <node id="8945660651030411685" at="157,0,160,0" concept="6" trace="after#()Ljava/lang/Iterable;" />
+      <node id="8945660651030411685" at="160,0,163,0" concept="6" trace="notBefore#()Ljava/lang/Iterable;" />
+      <node id="8945660651030411685" at="163,0,166,0" concept="6" trace="before#()Ljava/lang/Iterable;" />
+      <node id="8945660651030411685" at="166,0,169,0" concept="6" trace="getName#()Ljetbrains/mps/make/facet/ITarget/Name;" />
+      <node id="8945660651030411685" at="169,0,172,0" concept="6" trace="isOptional#()Z" />
+      <node id="8945660651030411685" at="172,0,175,0" concept="6" trace="requiresInput#()Z" />
+      <node id="8945660651030411685" at="175,0,178,0" concept="6" trace="producesOutput#()Z" />
+      <node id="8945660651030411685" at="183,0,186,0" concept="6" trace="expectedOutput#()Ljava/lang/Iterable;" />
+      <node id="8945660651030411685" at="186,0,189,0" concept="6" trace="createParameters#(Ljava/lang/Class;)null" />
+      <node id="8945660651030411673" at="199,83,202,7" concept="12" />
+      <node id="8945660651030411685" at="189,0,193,0" concept="6" trace="createParameters#(Ljava/lang/Class;null)null" />
+      <node id="8945660651102372659" at="114,128,119,31" concept="12" />
+      <node id="8945660651030411685" at="178,0,183,0" concept="6" trace="expectedInput#()Ljava/lang/Iterable;" />
+      <node id="8945660651030411673" at="199,0,204,0" concept="6" trace="loadValues#(Ljava/util/Map;Ljetbrains/mps/make/script/IPropertiesPool;)V" />
+      <node id="8945660651099671368" at="113,105,120,31" concept="2" />
+      <node id="8945660651102145818" at="107,74,131,27" concept="12" />
+      <node id="8945660651099649576" at="106,139,132,27" concept="2" />
+      <node id="8945660651099554822" at="101,0,133,23" concept="0" />
+      <node id="8945660651097238577" at="98,106,136,21" concept="4" />
+      <node id="8945660651097293058" at="97,47,137,21" concept="2" />
+      <node id="8945660651102708714" at="96,0,139,17" concept="5" />
+      <node id="8945660651096529782" at="87,0,140,15" concept="4" />
+      <node id="8945660651030411687" at="83,86,147,11" concept="11" />
+      <node id="8945660651030411687" at="80,0,149,0" concept="6" trace="execute#(Ljava/lang/Iterable;Ljetbrains/mps/make/script/IJobMonitor;Ljetbrains/mps/make/resources/IPropertiesAccessor;Lorg/jetbrains/mps/openapi/util/ProgressMonitor;)Ljetbrains/mps/make/script/IResult;" />
+      <node id="8945660651030411685" at="78,29,149,8" concept="8" />
+      <node id="8945660651030411685" at="78,0,151,0" concept="6" trace="createJob#()Ljetbrains/mps/make/script/IJob;" />
+      <scope id="8945660651030411685" at="76,36,76,36" />
+      <scope id="8945660651030411673" at="195,31,195,31" />
+      <scope id="8945660651030411673" at="197,84,197,84" />
+      <scope id="8945660651030411673" at="200,11,200,11" />
+      <scope id="8945660651030411673" at="201,37,201,37" />
+      <scope id="8945660651030411673" at="53,34,54,75" />
+      <scope id="8945660651030411673" at="56,38,57,19" />
+      <scope id="8945660651030411673" at="59,43,60,16" />
+      <scope id="8945660651030411673" at="62,43,63,158" />
+      <scope id="8945660651030411673" at="65,43,66,16" />
+      <scope id="8945660651030411673" at="68,32,69,21" />
+      <scope id="8945660651030411673" at="71,57,72,34" />
+      <scope id="8945660651102591179" at="93,68,94,102" />
+      <scope id="8945660651102372661" at="115,35,116,112" />
+      <scope id="8945660651102387317" at="117,55,118,150" />
+      <scope id="8945660651102168896" at="129,51,130,146" />
+      <scope id="8945660651030411685" at="151,35,152,18" />
+      <scope id="8945660651030411685" at="154,46,155,18" />
+      <scope id="8945660651030411685" at="157,43,158,117" />
+      <scope id="8945660651030411685" at="160,47,161,18" />
+      <scope id="8945660651030411685" at="163,44,164,177" />
+      <scope id="8945660651030411685" at="166,35,167,18" />
+      <scope id="8945660651030411685" at="169,33,170,19" />
+      <scope id="8945660651030411685" at="172,36,173,18" />
+      <scope id="8945660651030411685" at="175,37,176,18" />
+      <scope id="8945660651030411685" at="183,66,184,18" />
+      <scope id="8945660651030411685" at="186,49,187,18" />
+      <scope id="8945660651030411673" at="201,7,202,7">
+        <var name="re" id="8945660651030411673" />
+      </scope>
+      <scope id="8945660651030411685" at="76,0,78,0" />
+      <scope id="8945660651102387314" at="117,31,119,31">
+        <var name="e" id="8945660651102387315" />
+      </scope>
+      <scope id="8945660651102168893" at="129,27,131,27">
+        <var name="e" id="8945660651102168894" />
+      </scope>
+      <scope id="8945660651030411687" at="144,20,146,61" />
+      <scope id="8945660651030411685" at="189,61,191,15">
+        <var name="t" id="8945660651030411685" />
+      </scope>
+      <scope id="8945660651030411673" at="195,0,197,0" />
+      <scope id="8945660651030411673" at="197,0,199,0">
+        <var name="properties" id="8945660651030411673" />
+        <var name="store" id="8945660651030411673" />
+      </scope>
+      <scope id="8945660651030411673" at="53,0,56,0" />
+      <scope id="8945660651030411673" at="56,0,59,0" />
+      <scope id="8945660651030411673" at="59,0,62,0" />
+      <scope id="8945660651030411673" at="62,0,65,0" />
+      <scope id="8945660651030411673" at="65,0,68,0" />
+      <scope id="8945660651030411673" at="68,0,71,0" />
+      <scope id="8945660651030411673" at="71,0,74,0" />
+      <scope id="8945660651030411685" at="151,0,154,0" />
+      <scope id="8945660651030411685" at="154,0,157,0" />
+      <scope id="8945660651030411685" at="157,0,160,0" />
+      <scope id="8945660651030411685" at="160,0,163,0" />
+      <scope id="8945660651030411685" at="163,0,166,0" />
+      <scope id="8945660651030411685" at="166,0,169,0" />
+      <scope id="8945660651030411685" at="169,0,172,0" />
+      <scope id="8945660651030411685" at="172,0,175,0" />
+      <scope id="8945660651030411685" at="175,0,178,0" />
+      <scope id="8945660651030411685" at="178,65,181,16">
+        <var name="rv" id="8945660651030411685" />
+      </scope>
+      <scope id="8945660651030411685" at="183,0,186,0" />
+      <scope id="8945660651030411685" at="186,0,189,0">
+        <var name="cls" id="8945660651030411685" />
+      </scope>
+      <scope id="8945660651030411673" at="199,83,202,7" />
+      <scope id="8945660651030411685" at="189,0,193,0">
+        <var name="cls" id="8945660651030411685" />
+        <var name="copyFrom" id="8945660651030411685" />
+      </scope>
+      <scope id="8945660651099706851" at="114,128,119,31" />
+      <scope id="8945660651030411685" at="178,0,183,0" />
+      <scope id="8945660651030411673" at="199,0,204,0">
+        <var name="properties" id="8945660651030411673" />
+        <var name="store" id="8945660651030411673" />
+      </scope>
+      <scope id="8945660651102145820" at="108,31,128,149">
+        <var name="localFs" id="8945660651104547154" />
+        <var name="pathToFile" id="8945660651103216647" />
+        <var name="stream" id="8945660651101852131" />
+      </scope>
+      <scope id="8945660651099656344" at="107,74,131,27" />
+      <scope id="8945660651099554822" at="102,23,132,27">
+        <var name="context" id="8945660651099554822" />
+        <var name="modules" id="8945660651099644525" />
+        <var name="scope_vj7j49_c0a0a0a0a6a2a0a0" id="8945660651099554822" />
+        <var name="scope_vj7j49_c0a0a0a0a6a2a0a0_0" id="8945660651099554822" />
+      </scope>
+      <scope id="8945660651097238583" at="99,113,135,66">
+        <var name="d" id="8945660651104246093" />
+      </scope>
+      <scope id="8945660651097238577" at="98,106,136,21">
+        <var name="model" id="8945660651097238579" />
+      </scope>
+      <scope id="8945660651097310089" at="98,106,136,21" />
+      <scope id="8945660651102708716" at="97,47,138,0" />
+      <scope id="8945660651096529788" at="88,77,139,17">
+        <var name="generationFacet" id="8945660651101202514" />
+        <var name="moduleName" id="8945660651102629565" />
+        <var name="outputPath" id="8945660651102585549" />
+      </scope>
+      <scope id="8945660651096529782" at="87,0,140,15">
+        <var name="resource" id="8945660651096529784" />
+      </scope>
+      <scope id="8945660651030411687" at="85,19,143,61">
+        <var name="deltas" id="8945660651104211202" />
+      </scope>
+      <scope id="8945660651030411687" at="81,173,147,11">
+        <var name="_output_vj7j49_a0a" id="8945660651030411687" />
+        <var name="input" id="8945660651030411687" />
+      </scope>
+      <scope id="8945660651030411687" at="80,0,149,0">
+        <var name="monitor" id="8945660651030411687" />
+        <var name="pa" id="8945660651030411687" />
+        <var name="progressMonitor" id="8945660651030411687" />
+        <var name="rawInput" id="8945660651030411687" />
+      </scope>
+      <scope id="8945660651030411685" at="78,29,149,8" />
+      <scope id="8945660651030411685" at="78,0,151,0" />
+      <unit id="8945660651030411673" at="206,0,209,0" name="WebAssembly.plugin.BuildBinaryWASM_Facet$CONCEPTS" />
+      <unit id="8945660651030411673" at="210,0,213,0" name="WebAssembly.plugin.BuildBinaryWASM_Facet$PROPS" />
+      <unit id="8945660651030411673" at="214,0,217,0" name="WebAssembly.plugin.BuildBinaryWASM_Facet$LINKS" />
+      <unit id="8945660651030411673" at="194,0,205,0" name="WebAssembly.plugin.BuildBinaryWASM_Facet$TargetProperties" />
+      <unit id="8945660651030411687" at="79,17,149,7" name="WebAssembly.plugin.BuildBinaryWASM_Facet$Target_buildWasmFiles$1" />
+      <unit id="8945660651030411685" at="74,0,194,0" name="WebAssembly.plugin.BuildBinaryWASM_Facet$Target_buildWasmFiles" />
+      <unit id="8945660651030411673" at="50,0,218,0" name="WebAssembly.plugin.BuildBinaryWASM_Facet" />
+    </file>
+    <file name="FacetManifest.java">
+      <node id="8945660651030411673" at="13,26,14,74" concept="2" />
+    </file>
+  </root>
+</debug-info>
+

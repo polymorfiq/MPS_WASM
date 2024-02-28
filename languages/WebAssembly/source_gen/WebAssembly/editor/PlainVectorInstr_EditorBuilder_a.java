@@ -39,7 +39,7 @@ import WebAssembly.editor.main_StyleSheet.instrStyleClass;
       setCellContext(bigCell);
     }
     Style style = new StyleImpl();
-    new instrStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    new instrStyleClass(this).apply(style, editorCell);
     editorCell.getStyle().putAll(style);
     return editorCell;
   }

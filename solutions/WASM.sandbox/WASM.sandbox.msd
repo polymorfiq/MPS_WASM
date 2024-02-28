@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="WASM.sandbox" uuid="0fd93af4-540f-4ed6-ae2e-607db97cbc36" moduleVersion="0" compileInMPS="true">
+<solution name="WASM.sandbox" uuid="0fd93af4-540f-4ed6-ae2e-607db97cbc36" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <languageVersions>
     <language slang="l:f298ec4d-9e6f-4f68-bf2b-d051b9d2fa18:BinaryGen.make" version="0" />
     <language slang="l:f0ceec77-84bd-4104-b532-84a17dffbb8a:WebAssembly" version="0" />
