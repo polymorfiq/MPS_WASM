@@ -4,7 +4,6 @@
   <languages>
     <use id="1d7609cb-4d98-44f8-9e3d-a7762f8b25d5" name="BinaryGen" version="0" />
     <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="1" />
-    <use id="f6019ccd-b9f3-4f78-9dd0-65ac7f3a4468" name="WebAssembly" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -306,9 +305,6 @@
         </node>
       </node>
     </node>
-    <node concept="3Tqbb2" id="3BBZ43PRw5z" role="3$iqVo">
-      <ref role="ehGHo" to="sx16:60rZZzHmi2$" resolve="Module" />
-    </node>
     <node concept="9MYSb" id="3BBZ43PRw5$" role="33IsuW">
       <node concept="3clFbS" id="3BBZ43PRw5_" role="2VODD2">
         <node concept="3cpWs6" id="3BBZ43PRwac" role="3cqZAp">
@@ -317,6 +313,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="3Tqbb2" id="4wY_TT79Jh8" role="3$iqVo">
+      <ref role="ehGHo" to="sx16:60rZZzHmi2$" resolve="Module" />
     </node>
   </node>
 </model>
