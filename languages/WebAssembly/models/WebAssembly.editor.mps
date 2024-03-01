@@ -507,7 +507,7 @@
   </node>
   <node concept="24kQdi" id="60rZZzIdJXH">
     <property role="3GE5qa" value="Imports" />
-    <ref role="1XX52x" to="sx16:60rZZzI7Rjh" resolve="ImportGlobalTypeDesc" />
+    <ref role="1XX52x" to="sx16:60rZZzI7Rjh" resolve="ImportGlobalDesc" />
     <node concept="3EZMnI" id="60rZZzIdJXJ" role="2wV5jI">
       <node concept="3F0ifn" id="60rZZzIdJXQ" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -548,7 +548,7 @@
   </node>
   <node concept="24kQdi" id="60rZZzIiIq4">
     <property role="3GE5qa" value="Imports" />
-    <ref role="1XX52x" to="sx16:60rZZzI7Rj8" resolve="ImportMemTypeDesc" />
+    <ref role="1XX52x" to="sx16:60rZZzI7Rj8" resolve="ImportMemDesc" />
     <node concept="3EZMnI" id="60rZZzIiRKJ" role="2wV5jI">
       <node concept="3F0ifn" id="60rZZzIiRKS" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -618,16 +618,54 @@
   </node>
   <node concept="24kQdi" id="6WF2U0MsHgo">
     <property role="3GE5qa" value="Imports" />
-    <ref role="1XX52x" to="sx16:60rZZzI7Rj1" resolve="ImportTableTypeDesc" />
-    <node concept="3F1sOY" id="6WF2U0MsHgq" role="2wV5jI">
-      <ref role="1NtTu8" to="sx16:60rZZzI7Rj5" resolve="tabletype" />
+    <ref role="1XX52x" to="sx16:60rZZzI7Rj1" resolve="ImportTableDesc" />
+    <node concept="3EZMnI" id="7K_nJtgXwWO" role="2wV5jI">
+      <node concept="3F0ifn" id="7K_nJtgXwX7" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11LMrY" id="7K_nJtgXwY7" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7K_nJtgXwXp" role="3EZMnx">
+        <property role="3F0ifm" value="table" />
+        <ref role="1k5W1q" node="6WF2U0MxCMv" resolve="section_itemname" />
+      </node>
+      <node concept="2iRfu4" id="7K_nJtgXwWP" role="2iSdaV" />
+      <node concept="3F1sOY" id="6WF2U0MsHgq" role="3EZMnx">
+        <ref role="1NtTu8" to="sx16:60rZZzI7Rj5" resolve="tabletype" />
+      </node>
+      <node concept="3F0ifn" id="7K_nJtgXwY$" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="7K_nJtgXwZ0" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="6WF2U0MtB4z">
     <property role="3GE5qa" value="Imports" />
-    <ref role="1XX52x" to="sx16:60rZZzI7RiM" resolve="ImportTypeIdxDesc" />
-    <node concept="3F1sOY" id="6WF2U0MtB4_" role="2wV5jI">
-      <ref role="1NtTu8" to="sx16:60rZZzI7RiO" resolve="typeidx" />
+    <ref role="1XX52x" to="sx16:60rZZzI7RiM" resolve="ImportFuncDesc" />
+    <node concept="3EZMnI" id="7K_nJtgXwSe" role="2wV5jI">
+      <node concept="3F0ifn" id="7K_nJtgXwSP" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11LMrY" id="7K_nJtgXwTQ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7K_nJtgXwT7" role="3EZMnx">
+        <property role="3F0ifm" value="func" />
+        <ref role="1k5W1q" node="6WF2U0MxCMv" resolve="section_itemname" />
+      </node>
+      <node concept="2iRfu4" id="7K_nJtgXwSf" role="2iSdaV" />
+      <node concept="3F1sOY" id="6WF2U0MtB4_" role="3EZMnx">
+        <ref role="1NtTu8" to="sx16:60rZZzI7RiO" resolve="typeidx" />
+      </node>
+      <node concept="3F0ifn" id="7K_nJtgXwUt" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="7K_nJtgXwV3" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="6WF2U0MtB4J">

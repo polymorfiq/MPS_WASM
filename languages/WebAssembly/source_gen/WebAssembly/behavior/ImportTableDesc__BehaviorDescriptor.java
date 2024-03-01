@@ -20,8 +20,8 @@ import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 
-public final class ImportMemTypeDesc__BehaviorDescriptor extends BaseBHDescriptor {
-  private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf0ceec7784bd4104L, 0xb53284a17dffbb8aL, 0x601bfff8ee1f74c8L, "WebAssembly.structure.ImportMemTypeDesc");
+public final class ImportTableDesc__BehaviorDescriptor extends BaseBHDescriptor {
+  private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf0ceec7784bd4104L, 0xb53284a17dffbb8aL, 0x601bfff8ee1f74c1L, "WebAssembly.structure.ImportTableDesc");
 
   public static final SMethod<Integer> byte_size_id60rZZzHEXgh = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("byte_size").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6925410296616702993L).languageId(0xb53284a17dffbb8aL, 0xf0ceec7784bd4104L).build2();
   public static final SMethod<byte[]> bytes_id60rZZzHEXiv = new SMethodBuilder<byte[]>(new SJavaCompoundTypeImpl(byte[].class)).name("bytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6925410296616703135L).languageId(0xb53284a17dffbb8aL, 0xf0ceec7784bd4104L).build2();
@@ -32,17 +32,17 @@ public final class ImportMemTypeDesc__BehaviorDescriptor extends BaseBHDescripto
   }
 
   /*package*/ static int byte_size_id60rZZzHEXgh(@NotNull SNode __thisNode__) {
-    return (int) ByteSized__BehaviorDescriptor.byte_size_id60rZZzHEXgh.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.memtype$5AQl)) + 1;
+    return (int) ByteSized__BehaviorDescriptor.byte_size_id60rZZzHEXgh.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.tabletype$5w4l)) + 1;
   }
   /*package*/ static byte[] bytes_id60rZZzHEXiv(@NotNull SNode __thisNode__) {
     byte[] bytes = new byte[((int) ByteSized__BehaviorDescriptor.byte_size_id60rZZzHEXgh.invoke(__thisNode__))];
-    bytes[0] = Bytes.u8Byte(0x02);
-    System.arraycopy(ByteSized__BehaviorDescriptor.bytes_id60rZZzHEXiv.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.memtype$5AQl)), 0, bytes, 1, bytes.length - 1);
+    bytes[0] = Bytes.u8Byte(0x01);
+    System.arraycopy(ByteSized__BehaviorDescriptor.bytes_id60rZZzHEXiv.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.tabletype$5w4l)), 0, bytes, 1, bytes.length - 1);
 
     return bytes;
   }
 
-  /*package*/ ImportMemTypeDesc__BehaviorDescriptor() {
+  /*package*/ ImportTableDesc__BehaviorDescriptor() {
   }
 
   @Override
@@ -91,6 +91,6 @@ public final class ImportMemTypeDesc__BehaviorDescriptor extends BaseBHDescripto
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink memtype$5AQl = MetaAdapterFactory.getContainmentLink(0xf0ceec7784bd4104L, 0xb53284a17dffbb8aL, 0x601bfff8ee1f74c8L, 0x601bfff8ee1f74ccL, "memtype");
+    /*package*/ static final SContainmentLink tabletype$5w4l = MetaAdapterFactory.getContainmentLink(0xf0ceec7784bd4104L, 0xb53284a17dffbb8aL, 0x601bfff8ee1f74c1L, 0x601bfff8ee1f74c5L, "tabletype");
   }
 }

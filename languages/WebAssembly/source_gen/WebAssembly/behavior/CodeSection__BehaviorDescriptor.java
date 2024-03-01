@@ -47,7 +47,7 @@ public final class CodeSection__BehaviorDescriptor extends BaseBHDescriptor {
     bytes[0] = 0x0A;
 
     final Wrappers._int contentLen = new Wrappers._int(0);
-    ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.codes$r1Ct)).visitAll((global) -> contentLen.value += (int) ByteSized__BehaviorDescriptor.byte_size_id60rZZzHEXgh.invoke(global));
+    ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.codes$r1Ct)).visitAll((code) -> contentLen.value += (int) ByteSized__BehaviorDescriptor.byte_size_id60rZZzHEXgh.invoke(code));
 
     byte[] vecLength = Bytes.u32BytesLeb128(ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.codes$r1Ct)).count());
     byte[] secLength = Bytes.u32BytesLeb128(contentLen.value + vecLength.length);

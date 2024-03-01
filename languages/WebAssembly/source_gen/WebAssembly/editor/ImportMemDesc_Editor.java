@@ -7,8 +7,8 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class ImportTableTypeDesc_Editor extends DefaultNodeEditor {
+public class ImportMemDesc_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ImportTableTypeDesc_EditorBuilder_a(editorContext, node).createCell();
+    return new ImportMemDesc_EditorBuilder_a(editorContext, node).createCell();
   }
 }

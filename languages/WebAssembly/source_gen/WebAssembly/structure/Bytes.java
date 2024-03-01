@@ -15,11 +15,11 @@ public class Bytes {
     byte e = (byte) (num & done);
 
     if (a > 0) {
-      return new byte[]{(byte) (e | more), (byte) (d | more), (byte) (c | more), (byte) (b | more), (byte) (a)};
+      return new byte[]{(byte) (e | more), (byte) (d | more), (byte) (c | more), (byte) (b | more), (byte) (a & done)};
     } else if (b > 0) {
-      return new byte[]{(byte) (e | more), (byte) (d | more), (byte) (c | more), (byte) (b)};
+      return new byte[]{(byte) (e | more), (byte) (d | more), (byte) (c | more), (byte) (b & done)};
     } else if (c > 0) {
-      return new byte[]{(byte) (e | more), (byte) (d | more), (byte) (c)};
+      return new byte[]{(byte) (e | more), (byte) (d | more), (byte) (c & done)};
     } else if (d > 0) {
       return new byte[]{(byte) (e | more), (byte) (d & done)};
     } else {

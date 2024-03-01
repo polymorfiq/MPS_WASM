@@ -429,11 +429,11 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_IfElse;
   private ConceptPresentation props_Import;
   private ConceptPresentation props_ImportDesc;
-  private ConceptPresentation props_ImportGlobalTypeDesc;
-  private ConceptPresentation props_ImportMemTypeDesc;
+  private ConceptPresentation props_ImportFuncDesc;
+  private ConceptPresentation props_ImportGlobalDesc;
+  private ConceptPresentation props_ImportMemDesc;
   private ConceptPresentation props_ImportSection;
-  private ConceptPresentation props_ImportTableTypeDesc;
-  private ConceptPresentation props_ImportTypeIdxDesc;
+  private ConceptPresentation props_ImportTableDesc;
   private ConceptPresentation props_Index;
   private ConceptPresentation props_Instr;
   private ConceptPresentation props_LabelIdx;
@@ -3464,20 +3464,27 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ImportDesc = cpb.create();
         }
         return props_ImportDesc;
-      case LanguageConceptSwitch.ImportGlobalTypeDesc:
-        if (props_ImportGlobalTypeDesc == null) {
+      case LanguageConceptSwitch.ImportFuncDesc:
+        if (props_ImportFuncDesc == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("typeidx");
+          props_ImportFuncDesc = cpb.create();
+        }
+        return props_ImportFuncDesc;
+      case LanguageConceptSwitch.ImportGlobalDesc:
+        if (props_ImportGlobalDesc == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.rawPresentation("globaltype");
-          props_ImportGlobalTypeDesc = cpb.create();
+          props_ImportGlobalDesc = cpb.create();
         }
-        return props_ImportGlobalTypeDesc;
-      case LanguageConceptSwitch.ImportMemTypeDesc:
-        if (props_ImportMemTypeDesc == null) {
+        return props_ImportGlobalDesc;
+      case LanguageConceptSwitch.ImportMemDesc:
+        if (props_ImportMemDesc == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.rawPresentation("memtype");
-          props_ImportMemTypeDesc = cpb.create();
+          props_ImportMemDesc = cpb.create();
         }
-        return props_ImportMemTypeDesc;
+        return props_ImportMemDesc;
       case LanguageConceptSwitch.ImportSection:
         if (props_ImportSection == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -3485,20 +3492,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ImportSection = cpb.create();
         }
         return props_ImportSection;
-      case LanguageConceptSwitch.ImportTableTypeDesc:
-        if (props_ImportTableTypeDesc == null) {
+      case LanguageConceptSwitch.ImportTableDesc:
+        if (props_ImportTableDesc == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.rawPresentation("tabletype");
-          props_ImportTableTypeDesc = cpb.create();
+          props_ImportTableDesc = cpb.create();
         }
-        return props_ImportTableTypeDesc;
-      case LanguageConceptSwitch.ImportTypeIdxDesc:
-        if (props_ImportTypeIdxDesc == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("typeidx");
-          props_ImportTypeIdxDesc = cpb.create();
-        }
-        return props_ImportTypeIdxDesc;
+        return props_ImportTableDesc;
       case LanguageConceptSwitch.Index:
         if (props_Index == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

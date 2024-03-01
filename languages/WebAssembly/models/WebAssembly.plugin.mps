@@ -256,9 +256,6 @@
         <property role="3HPxAp" value="7fB872ucjBA/AFTER" />
         <ref role="15KeV8" to="tpcq:5L5h3brvzcf" resolve="generate" />
       </node>
-      <node concept="15KeVb" id="7K_nJtaj28Z" role="15LFui">
-        <ref role="15KeV8" to="tpcq:5L5h3brvDHA" resolve="textGen" />
-      </node>
       <node concept="15KeVb" id="7K_nJteo8eX" role="15LFui">
         <ref role="15KeV8" to="fy8e:taepSZ9r$W" resolve="reconcile" />
       </node>
@@ -280,6 +277,12 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="7K_nJteQc1R" role="3cqZAp" />
+            <node concept="1daRAt" id="7K_nJteQepw" role="3cqZAp">
+              <node concept="Xl_RD" id="7K_nJteQfUJ" role="1daK9t">
+                <property role="Xl_RC" value="[BuildBinaryWASM] Starting Binary Generation of WASM..." />
               </node>
             </node>
             <node concept="3clFbH" id="7K_nJtegtAK" role="3cqZAp" />
@@ -855,9 +858,6 @@
     </node>
     <node concept="3HPw9p" id="7K_nJt9QRAw" role="1Mm5TH">
       <ref role="1Mm5Yu" to="tpcq:5L5h3brvz7i" resolve="Generate" />
-    </node>
-    <node concept="3HPw9p" id="7K_nJt9QRAy" role="1Mm5TH">
-      <ref role="1Mm5Yu" to="tpcq:5L5h3brvDH_" resolve="TextGen" />
     </node>
   </node>
 </model>

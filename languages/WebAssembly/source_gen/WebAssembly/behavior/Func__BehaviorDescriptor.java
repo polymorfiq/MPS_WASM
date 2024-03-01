@@ -39,7 +39,12 @@ public final class Func__BehaviorDescriptor extends BaseBHDescriptor {
 
     byte[] vecLength = Bytes.u32BytesLeb128(ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.locals$w0AZ)).count());
 
-    return vecLength.length + localsLen.value + (int) ByteSized__BehaviorDescriptor.byte_size_id60rZZzHEXgh.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.expr$w151));
+    int exprSize = 1;
+    if (SLinkOperations.getTarget(__thisNode__, LINKS.expr$w151) != null) {
+      exprSize = (int) ByteSized__BehaviorDescriptor.byte_size_id60rZZzHEXgh.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.expr$w151));
+    }
+
+    return vecLength.length + localsLen.value + exprSize;
   }
   /*package*/ static byte[] bytes_id60rZZzHEXiv(@NotNull SNode __thisNode__) {
     final byte[] bytes = new byte[((int) ByteSized__BehaviorDescriptor.byte_size_id60rZZzHEXgh.invoke(__thisNode__))];
@@ -57,7 +62,12 @@ public final class Func__BehaviorDescriptor extends BaseBHDescriptor {
     });
 
     byte[] exprBytes = ByteSized__BehaviorDescriptor.bytes_id60rZZzHEXiv.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.expr$w151));
-    System.arraycopy(exprBytes, 0, bytes, i.value, exprBytes.length);
+    if (exprBytes != null) {
+      System.arraycopy(exprBytes, 0, bytes, i.value, exprBytes.length);
+    } else {
+      byte endByte = 0x0B;
+      System.arraycopy(new byte[]{endByte}, 0, bytes, i.value, 1);
+    }
 
     return bytes;
   }

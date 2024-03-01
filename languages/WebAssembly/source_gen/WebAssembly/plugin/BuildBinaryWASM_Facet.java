@@ -20,6 +20,7 @@ import org.jetbrains.mps.openapi.util.ProgressMonitor;
 import jetbrains.mps.smodel.resources.GResource;
 import jetbrains.mps.make.delta.IDelta;
 import java.util.LinkedList;
+import jetbrains.mps.make.script.IFeedback;
 import jetbrains.mps.project.facets.GenerationTargetFacet;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import org.jetbrains.mps.openapi.model.SModel;
@@ -36,7 +37,6 @@ import java.io.FileOutputStream;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import WebAssembly.behavior.ByteSized__BehaviorDescriptor;
 import java.io.IOException;
-import jetbrains.mps.make.script.IFeedback;
 import jetbrains.mps.vfs.FileSystem;
 import jetbrains.mps.smodel.resources.DResource;
 import jetbrains.mps.make.script.IConfig;
@@ -60,7 +60,7 @@ public class BuildBinaryWASM_Facet extends IFacet.Stub {
     return null;
   }
   public Iterable<IFacet.Name> required() {
-    return Sequence.fromArray(new IFacet.Name[]{new IFacet.Name("jetbrains.mps.make.facets.Generate"), new IFacet.Name("jetbrains.mps.make.facets.TextGen")});
+    return Sequence.fromArray(new IFacet.Name[]{new IFacet.Name("jetbrains.mps.make.facets.Generate")});
   }
   public Iterable<IFacet.Name> extended() {
     return null;
@@ -85,6 +85,8 @@ public class BuildBinaryWASM_Facet extends IFacet.Stub {
             case 0:
               final List<IDelta> deltas = ListSequence.fromList(new LinkedList<IDelta>());
 
+              monitor.reportFeedback(new IFeedback.INFORMATION(String.valueOf("[BuildBinaryWASM] Starting Binary Generation of WASM...")));
+
               for (final GResource resource : Sequence.fromIterable(input)) {
                 GenerationTargetFacet generationFacet = resource.module().getFacet(GenerationTargetFacet.class);
 
@@ -100,9 +102,9 @@ public class BuildBinaryWASM_Facet extends IFacet.Stub {
                       final FilesDelta d = new FilesDelta(new DeltaKey(model.getModule(), model));
 
                       {
-                        SearchScope scope_vj7j49_c0a0a0a0a6a2a0a0 = CommandUtil.createScope(model);
-                        final SearchScope scope_vj7j49_c0a0a0a0a6a2a0a0_0 = scope_vj7j49_c0a0a0a0a6a2a0a0;
-                        QueryExecutionContext context = () -> scope_vj7j49_c0a0a0a0a6a2a0a0_0;
+                        SearchScope scope_vj7j49_c0a0a0a0a6a4a0a0 = CommandUtil.createScope(model);
+                        final SearchScope scope_vj7j49_c0a0a0a0a6a4a0a0_0 = scope_vj7j49_c0a0a0a0a6a4a0a0;
+                        QueryExecutionContext context = () -> scope_vj7j49_c0a0a0a0a6a4a0a0_0;
                         Iterable<SNode> modules = CommandUtil.instances(CommandUtil.selectScope(null, context), CONCEPTS.Module$jY, false);
                         Sequence.fromIterable(modules).visitAll((mod) -> {
                           try {
@@ -161,7 +163,7 @@ public class BuildBinaryWASM_Facet extends IFacet.Stub {
       return null;
     }
     public Iterable<ITarget.Name> before() {
-      return Sequence.fromArray(new ITarget.Name[]{new ITarget.Name("jetbrains.mps.make.facets.TextGen.textGen"), new ITarget.Name("jetbrains.mps.make.facets.Make.reconcile")});
+      return Sequence.fromArray(new ITarget.Name[]{new ITarget.Name("jetbrains.mps.make.facets.Make.reconcile")});
     }
     public ITarget.Name getName() {
       return name;

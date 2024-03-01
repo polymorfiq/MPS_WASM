@@ -45,7 +45,7 @@ public final class Expr__BehaviorDescriptor extends BaseBHDescriptor {
     final Wrappers._int i = new Wrappers._int(0);
     ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.instrs$LGLM)).visitAll((instr) -> {
       byte[] instrBytes = ByteSized__BehaviorDescriptor.bytes_id60rZZzHEXiv.invoke(instr);
-      System.arraycopy(instrBytes, 0, bytes, 0, instrBytes.length);
+      System.arraycopy(instrBytes, 0, bytes, i.value, instrBytes.length);
       i.value += instrBytes.length;
     });
 
